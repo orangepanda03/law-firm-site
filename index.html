@@ -32,26 +32,22 @@
         .nav-links a { color: white; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; transition: color 0.3s; }
         .nav-links a:hover { color: #d4af37; }
 
-        /* Hero Section (Translucent JPG Image Background) */
+        /* Hero Section (Centered Layout without Logo) */
         .hero { 
             /* The 'rgba' values create a white overlay at 85% opacity over the background image */
-            background-image: linear-gradient(rgba(255, 255, 255, 0.60), rgba(255, 255, 255, 0.60)), url('hero-bg.jpg'); 
+            background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('hero-bg.jpg'); 
             background-size: cover;
-            /* Shifting the background to focus on the top 20% of the image (head and scales) */
             background-position: center 20%; 
             color: #0f172a; 
-            padding: 120px 20px; 
+            padding: 140px 20px; 
+            text-align: center;
         }
-        .hero-content { display: flex; align-items: center; justify-content: space-between; gap: 60px; }
+        .hero-content { max-width: 900px; margin: 0 auto; }
         
-        /* White card back behind the logo so it stands out from the new textured background */
-        .hero-logo { flex: 1; max-width: 350px; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
-        .hero-logo img { width: 100%; height: auto; display: block; }
-        
-        .hero-text { flex: 2; text-align: left; }
         .hero h1 { font-size: 3.5rem; margin-bottom: 20px; line-height: 1.2; font-weight: 700; color: #0f172a; }
-        .hero p { font-size: 1.25rem; color: #475569; margin-bottom: 40px; }
-        .hero-buttons { display: flex; justify-content: flex-start; gap: 20px; flex-wrap: wrap; }
+        .hero p.sub-headline { font-size: 2.2rem; font-weight: 700; color: #0f172a; margin-bottom: 40px; line-height: 1.3; }
+        
+        .hero-buttons { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
         .btn { display: inline-block; padding: 15px 35px; border-radius: 6px; font-weight: bold; text-decoration: none; transition: all 0.3s; }
         .btn-blue { background-color: #1d4ed8; color: white; }
         .btn-blue:hover { background-color: #1e40af; }
@@ -113,9 +109,8 @@
         @media (max-width: 768px) {
             .nav-links { display: none; }
             .hero-content { flex-direction: column; text-align: center; gap: 40px; }
-            .hero-text { text-align: center; }
-            .hero-buttons { justify-content: center; }
             .hero h1 { font-size: 2.5rem; }
+            .hero p.sub-headline { font-size: 1.8rem; }
             .about-grid, .contact-grid { grid-template-columns: 1fr; }
             .success-grid { grid-template-columns: 1fr; }
         }
@@ -137,12 +132,9 @@
 
     <header class="hero">
         <div class="container hero-content">
-            <div class="hero-logo">
-                <img src="logo.png" alt="TL Criminal Defence Logo">
-            </div>
             <div class="hero-text">
                 <h1>In Your Corner When It Matters Most</h1>
-                <p>Trevor Lau: Criminal trials and appeals lawyer serving Toronto, the GTA, and all of Ontario.</p>
+                <p class="sub-headline">Trevor Lau: Criminal trials and appeals lawyer serving Toronto, the GTA, and all of Ontario.</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-blue">FREE CONSULTATION</a>
                     <a href="#about" class="btn btn-outline">LEARN MORE</a>
