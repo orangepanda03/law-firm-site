@@ -59,7 +59,9 @@
         .services h2 { font-size: 2.5rem; margin-bottom: 10px; font-weight: 700; }
         .services p { color: #94a3b8; font-size: 1.1rem; margin-bottom: 40px; }
         .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
-        .service-card { background-color: #1e293b; border: 1px solid #334155; padding: 30px 20px; border-radius: 8px; display: flex; align-items: center; justify-content: center; height: 100px; transition: border-color 0.3s; }
+        
+        /* UPDATED: .service-card is now styled to function seamlessly as a link */
+        .service-card { text-decoration: none; color: white; background-color: #1e293b; border: 1px solid #334155; padding: 30px 20px; border-radius: 8px; display: flex; align-items: center; justify-content: center; height: 100px; transition: border-color 0.3s; cursor: pointer; }
         .service-card:hover { border-color: #3b82f6; }
         .service-card h3 { font-size: 1.1rem; margin: 0; font-weight: 600; }
 
@@ -120,7 +122,7 @@
                 <p class="sub-headline">Trevor Lau: Criminal Trials and Appeals Lawyer</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-blue">FREE CONSULTATION</a>
-                    <a href="#about" class="btn btn-outline">LEARN MORE</a>
+                    <a href="#about" class="btn-outline btn">LEARN MORE</a>
                 </div>
             </div>
         </div>
@@ -130,16 +132,18 @@
         <div class="container">
             <h2>Criminal Defence Services</h2>
             <p>Defending clients across Ontario, no matter the charges.</p>
+            
             <div class="service-grid">
-                <div class="service-card"><h3>Sexual Assault / Sexual Offences</h3></div>
-                <div class="service-card"><h3>DUI / Impaired Driving</h3></div>
-                <div class="service-card"><h3>Drug Trafficking</h3></div>
-                <div class="service-card"><h3>Firearm Offences</h3></div>
-                <div class="service-card"><h3>Extortion & Harassment</h3></div>
-                <div class="service-card"><h3>Murder & Violent Crimes</h3></div>
-                <div class="service-card"><h3>Appeals</h3></div>
-                <div class="service-card"><h3>Domestic Assault</h3></div>
+                <a href="sexual-assault.html" class="service-card"><h3>Sexual Assault / Sexual Offences</h3></a>
+                <a href="dui.html" class="service-card"><h3>DUI / Impaired Driving</h3></a>
+                <a href="drug-trafficking.html" class="service-card"><h3>Drug Trafficking</h3></a>
+                <a href="firearms.html" class="service-card"><h3>Firearm Offences</h3></a>
+                <a href="extortion.html" class="service-card"><h3>Extortion & Harassment</h3></a>
+                <a href="murder.html" class="service-card"><h3>Murder & Violent Crimes</h3></a>
+                <a href="appeals.html" class="service-card"><h3>Appeals</h3></a>
+                <a href="domestic-assault.html" class="service-card"><h3>Domestic Assault</h3></a>
             </div>
+            
             <div style="margin-top: 40px;">
                 <a href="#contact" class="btn btn-blue" style="background-color: #ea580c; border: none;">DISCUSS YOUR CASE</a>
             </div>
