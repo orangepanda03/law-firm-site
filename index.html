@@ -43,7 +43,7 @@
         }
         .hero-content { display: flex; align-items: center; justify-content: space-between; gap: 60px; }
         
-        /* White card back behind the logo */
+        /* White card back behind the logo so it stands out from the new textured background */
         .hero-logo { flex: 1; max-width: 350px; background: white; padding: 25px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
         .hero-logo img { width: 100%; height: auto; display: block; }
         
@@ -90,55 +90,4 @@
         .success-card { background: white; border-radius: 10px; padding: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 8px solid #16a34a; border-top: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; }
         .success-title { font-size: 1.4rem; font-weight: bold; margin-bottom: 10px; }
         .success-charges { color: #b91c1c; font-weight: 600; font-size: 0.9rem; margin-bottom: 15px; }
-        .success-desc { color: #475569; font-size: 0.95rem; margin-bottom: 15px; }
-        .success-result { color: #16a34a; font-weight: bold; font-size: 0.95rem; border-top: 1px solid #f1f5f9; padding-top: 15px; }
-
-        /* Contact Section */
-        .contact { background-color: #0f172a; color: white; padding: 80px 0; }
-        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
-        .contact h2 { font-size: 2.5rem; margin-bottom: 20px; font-weight: 700; }
-        .contact p { color: #cbd5e1; font-size: 1.1rem; margin-bottom: 20px; }
-        .contact-card { background: white; color: #0f172a; padding: 40px; border-radius: 12px; }
-        .contact-card h3 { border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; margin-bottom: 20px; font-size: 1.5rem; font-weight: 700; }
-        .contact-item { margin-bottom: 20px; }
-        .contact-label { font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
-        .contact-value { font-size: 1.2rem; font-weight: bold; color: #0f172a; text-decoration: none; }
-        .contact-value.link { color: #1d4ed8; }
-
-        /* Footer */
-        footer { background-color: #020617; color: #64748b; text-align: center; padding: 30px 20px; font-size: 0.9rem; }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .hero-content { flex-direction: column; text-align: center; gap: 40px; }
-            .hero-text { text-align: center; }
-            .hero-buttons { justify-content: center; }
-            .hero h1 { font-size: 2.5rem; }
-            .about-grid, .contact-grid { grid-template-columns: 1fr; }
-            .success-grid { grid-template-columns: 1fr; }
-        }
-    </style>
-</head>
-<body>
-
-    <nav>
-        <div class="nav-inner">
-            <div class="nav-brand">TL Criminal Defence</div>
-            <div class="nav-links">
-                <a href="#services">Services</a>
-                <a href="#about">About</a>
-                <a href="#successes">Successes</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </div>
-    </nav>
-
-    <header class="hero">
-        <div class="container hero-content">
-            <div class="hero-logo">
-                <img src="logo.png" alt="TL Criminal Defence Logo">
-            </div>
-            <div class="hero-text">
-                <h1>In Your Corner When It Matters Most</h1>
-                <p>Criminal defence lawyer serving Toronto, the GTA, and all of Ontario.</p
+        .success-desc { color: #475569; font-size: 0.95rem;
