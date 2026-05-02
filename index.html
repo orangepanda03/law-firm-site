@@ -32,10 +32,10 @@
         .nav-links a { color: white; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; transition: color 0.3s; }
         .nav-links a:hover { color: #d4af37; }
 
-        /* Hero Section (Translucent PNG Image Background) */
+        /* Hero Section (Translucent JPG Image Background) */
         .hero { 
             /* The 'rgba' values create a white overlay at 85% opacity over the background image */
-            background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('hero-bg.png'); 
+            background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('hero-bg.jpg'); 
             background-size: cover;
             background-position: center;
             color: #0f172a; 
@@ -90,4 +90,177 @@
         .success-card { background: white; border-radius: 10px; padding: 30px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); border-left: 8px solid #16a34a; border-top: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; }
         .success-title { font-size: 1.4rem; font-weight: bold; margin-bottom: 10px; }
         .success-charges { color: #b91c1c; font-weight: 600; font-size: 0.9rem; margin-bottom: 15px; }
-        .success-desc { color: #475569; font-size: 0.95rem;
+        .success-desc { color: #475569; font-size: 0.95rem; margin-bottom: 15px; }
+        .success-result { color: #16a34a; font-weight: bold; font-size: 0.95rem; border-top: 1px solid #f1f5f9; padding-top: 15px; }
+
+        /* Contact Section */
+        .contact { background-color: #0f172a; color: white; padding: 80px 0; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .contact h2 { font-size: 2.5rem; margin-bottom: 20px; font-weight: 700; }
+        .contact p { color: #cbd5e1; font-size: 1.1rem; margin-bottom: 20px; }
+        .contact-card { background: white; color: #0f172a; padding: 40px; border-radius: 12px; }
+        .contact-card h3 { border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; margin-bottom: 20px; font-size: 1.5rem; font-weight: 700; }
+        .contact-item { margin-bottom: 20px; }
+        .contact-label { font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        .contact-value { font-size: 1.2rem; font-weight: bold; color: #0f172a; text-decoration: none; }
+        .contact-value.link { color: #1d4ed8; }
+
+        /* Footer */
+        footer { background-color: #020617; color: #64748b; text-align: center; padding: 30px 20px; font-size: 0.9rem; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero-content { flex-direction: column; text-align: center; gap: 40px; }
+            .hero-text { text-align: center; }
+            .hero-buttons { justify-content: center; }
+            .hero h1 { font-size: 2.5rem; }
+            .about-grid, .contact-grid { grid-template-columns: 1fr; }
+            .success-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-inner">
+            <div class="nav-brand">TL Criminal Defence</div>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#about">About</a>
+                <a href="#successes">Successes</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <div class="hero-logo">
+                <img src="logo.png" alt="TL Criminal Defence Logo">
+            </div>
+            <div class="hero-text">
+                <h1>In Your Corner When It Matters Most</h1>
+                <p>Trevor Lau: Criminal trials and appeals lawyer serving Toronto, the GTA, and all of Ontario.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-blue">FREE CONSULTATION</a>
+                    <a href="#about" class="btn btn-outline">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Criminal Defence Services</h2>
+            <p>Defending clients across Ontario, no matter the charges.</p>
+            <div class="service-grid">
+                <div class="service-card"><h3>Sexual Assault / Sexual Offences</h3></div>
+                <div class="service-card"><h3>DUI / Impaired Driving</h3></div>
+                <div class="service-card"><h3>Drug Trafficking</h3></div>
+                <div class="service-card"><h3>Firearm Offences</h3></div>
+                <div class="service-card"><h3>Extortion & Harassment</h3></div>
+                <div class="service-card"><h3>Murder & Violent Crimes</h3></div>
+                <div class="service-card"><h3>Appeals</h3></div>
+                <div class="service-card"><h3>Domestic Assault</h3></div>
+            </div>
+            <div style="margin-top: 40px;">
+                <a href="#contact" class="btn btn-blue" style="background-color: #ea580c; border: none;">DISCUSS YOUR CASE</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div>
+                    <span class="about-tag">Oxford-Trained. Ontario-Focused. Results-Driven.</span>
+                    <h2>Trevor Lau</h2>
+                    <h3>Criminal Defence Lawyer</h3>
+                    <p>Trevor Lau obtained his law degree from the <strong>University of Oxford</strong>, and a Masters of Law from <strong>Osgoode Hall Law School</strong>.</p>
+                    <p>He is an experienced criminal defence lawyer who has successfully defended clients in both the Ontario Court of Justice and the Superior Court of Justice, against charges ranging from Impaired operation (DUI) to Murder. Trevor has also won appeal cases, which were featured in the Toronto Star.</p>
+                    <p>Trevor defends clients across Ontario rigorously, and believes every client deserves honesty and communication throughout the criminal justice process. His approach combines aggressive advocacy with transparent client relationships.</p>
+                </div>
+                <div class="headshot-container">
+                    <img src="headshot.jpg" alt="Trevor Lau - Criminal Defence Lawyer" class="headshot-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="successes" class="successes">
+        <div class="container">
+            <h2>Recent Successes</h2>
+            <p>Proven track record of achieving favorable outcomes for clients facing serious criminal charges</p>
+            
+            <div class="success-grid">
+                <div class="success-card">
+                    <div class="success-title">R. v. C.G. (2026)</div>
+                    <div class="success-charges">Charges: Assault, Fail to comply</div>
+                    <div class="success-desc">Charges were withdrawn following negotiations with the Crown, wherein I showed the allegations were manifestly false. Client's immigration status was protected as a result.</div>
+                    <div class="success-result">No jail, no criminal record</div>
+                </div>
+                <div class="success-card">
+                    <div class="success-title">R. v. C.S. (2026)</div>
+                    <div class="success-charges">Charges: Sexual assault x2, Assault w/ Choking, Assault</div>
+                    <div class="success-desc">Client acquitted of all charges after trial. Thorough cross-examination of the complainant revealed significant credibility and reliability issues in the Crown's case.</div>
+                    <div class="success-result">No jail, no criminal record</div>
+                </div>
+
+                <div class="success-card">
+                    <div class="success-title">R. v. J.W. (2025)</div>
+                    <div class="success-charges">Charges: Assault causing bodily harm & Assault</div>
+                    <div class="success-desc">Convictions successfully overturned on appeal, after arguing that there was a reasonable apprehension that the trial judge had engaged in results-driven reasoning.</div>
+                    <div class="success-result">New trial ordered, charges later withdrawn. No jail, no criminal record</div>
+                </div>
+                <div class="success-card">
+                    <div class="success-title">R. v. M.C. (2025)</div>
+                    <div class="success-charges">Charges: Uttering threats to cause death</div>
+                    <div class="success-desc">Following negotiations with the Crown, charges were withdrawn.</div>
+                    <div class="success-result">No jail, no criminal record</div>
+                </div>
+                <div class="success-card">
+                    <div class="success-title">R. v. S.G. (2025)</div>
+                    <div class="success-charges">Charges: Failure to stop after accident</div>
+                    <div class="success-desc">Client risked being barred from obtaining PR status if convicted of a criminal offence. Following negotiations with the Crown, the case was resolved by way of a plea to Careless driving causing bodily harm under the Highway Traffic Act.</div>
+                    <div class="success-result">No jail, no criminal record</div>
+                </div>
+                <div class="success-card">
+                    <div class="success-title">R. v. T.C.K. & R. v. A.M. (2025)</div>
+                    <div class="success-charges">Charges: Possession for trafficking (Cocaine & Fentanyl)</div>
+                    <div class="success-desc">Both clients had charges withdrawn after extensive pressure on the Crown to release disclosure.</div>
+                    <div class="success-result">No jail, no criminal records</div>
+                </div>
+                <div class="success-card">
+                    <div class="success-title">R. v. T.L. (2025)</div>
+                    <div class="success-charges">Charges: DUI, Sexual assault and Mischief Over</div>
+                    <div class="success-desc">Client faced deportation if convicted. Sexual assault & Mischief Over were stayed (dropped) mid-trial. DUI resolved through a plea to Careless driving under the Highway Traffic Act.</div>
+                    <div class="success-result">No jail, no criminal record</div>
+                </div>
+
+                <div class="success-card">
+                    <div class="success-title">R. v. A.M. (2024)</div>
+                    <div class="success-charges">Charges: Firearm offences</div>
+                    <div class="success-desc">Charges withdrawn mid-trial after thorough cross-examination of the complainant, which led to evidence suggesting collusion and fabrication.</div>
+                    <div class="success-result">No jail, no criminal record</div>
+                </div>
+                <div class="success-card">
+                    <div class="success-title">R. v. C.K. (2024)</div>
+                    <div class="success-charges">Charges: Impaired operation, Over 80</div>
+                    <div class="success-desc">Charges were stayed following my filing of Charter applications alleging ss. 7, 8, 10(a)&(b) Charter violations.</div>
+                    <div class="success-result">No jail, no criminal record</div>
+                </div>
+                <div class="success-card">
+                    <div class="success-title">R. v. K.E. (2024)</div>
+                    <div class="success-charges">Charges: Sexual assault and Fail to comply</div>
+                    <div class="success-desc">Charges against elderly client withdrawn after negotiations with Crown.</div>
+                    <div class="success-result">No jail, no criminal record</div>
+                </div>
+
+                <div class="success-card">
+                    <div class="success-title">R. v. K.C. (2023)</div>
+                    <div class="success-charges">Charges: Sexual assault</div>
+                    <div class="success-desc">Charges withdrawn following filing of pre-trial motions to admit screenshots of conversations with the complainant, and of prior sexual history.</div>
+                    <div class="success-result">No jail, no criminal record</div>
+                </div>
+                <div class="success
