@@ -15,8 +15,10 @@
         .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
         
         /* Navigation */
-        nav { background-color: #1e253c; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); }
-        .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 90px; padding: 0 40px; }
+        nav { background-color: #1e253c; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
+        nav.scrolled { background-color: rgba(30, 37, 60, 0.95); backdrop-filter: blur(10px); box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.2); }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 90px; padding: 0 40px; transition: height 0.3s ease; }
+        nav.scrolled .nav-inner { height: 70px; }
         
         /* Updated Brand Font: Garamond */
         .nav-brand, .nav-brand a { 
@@ -27,7 +29,9 @@
             letter-spacing: 1px; 
             font-family: "Garamond", Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
             text-decoration: none;
+            transition: font-size 0.3s ease;
         }
+        nav.scrolled .nav-brand, nav.scrolled .nav-brand a { font-size: 1.5rem; }
         
         .nav-links { display: flex; gap: 30px; }
         .nav-links a { color: white; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; transition: color 0.3s; }
@@ -220,6 +224,17 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            // STICKY HEADER ENHANCEMENT
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+
+            // SCROLL ANIMATION CLASSES
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
