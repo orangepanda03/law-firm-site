@@ -65,10 +65,20 @@
         .services p { color: #94a3b8; font-size: 1.1rem; margin-bottom: 40px; }
         .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
         
-        .service-card { text-decoration: none; color: white; background-color: #1e293b; border: 1px solid #334155; padding: 30px 20px; border-radius: 8px; display: flex; align-items: center; justify-content: center; height: 100px; transition: border-color 0.3s, transform 0.3s; cursor: pointer; }
+        .service-card { 
+            text-decoration: none; color: white; background-color: #1e293b; 
+            border: 1px solid #334155; padding: 25px 15px; border-radius: 8px; 
+            display: flex; flex-direction: column; align-items: center; justify-content: center; 
+            text-align: center; height: 160px; gap: 15px; 
+            transition: border-color 0.3s, transform 0.3s; cursor: pointer; 
+        }
         .service-card:hover { border-color: #3b82f6; transform: translateY(-3px); }
-        .service-card h3 { font-size: 1.1rem; margin: 0; font-weight: 600; }
-
+        .service-card h3 { font-size: 1.1rem; margin: 0; font-weight: 600; line-height: 1.3; }
+        
+        /* This styles the SVG icons specifically */
+        .service-card svg { color: #94a3b8; transition: color 0.3s; }
+        .service-card:hover svg { color: #3b82f6; }
+        
         /* About Section */
         .about { background-color: white; padding: 80px 0; }
         .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
@@ -151,14 +161,45 @@
             </div>
             
             <div class="service-grid">
-                <a href="sexual-assault.html" class="service-card reveal" style="transition-delay: 0.1s;"><h3>Sexual Assault / Sexual Offences</h3></a>
-                <a href="dui.html" class="service-card reveal" style="transition-delay: 0.2s;"><h3>DUI / Impaired Driving</h3></a>
-                <a href="drug-trafficking.html" class="service-card reveal" style="transition-delay: 0.3s;"><h3>Drug Trafficking</h3></a>
-                <a href="firearms.html" class="service-card reveal" style="transition-delay: 0.4s;"><h3>Firearm Offences</h3></a>
-                <a href="extortion.html" class="service-card reveal" style="transition-delay: 0.1s;"><h3>Extortion & Harassment</h3></a>
-                <a href="murder.html" class="service-card reveal" style="transition-delay: 0.2s;"><h3>Murder & Violent Crimes</h3></a>
-                <a href="appeals.html" class="service-card reveal" style="transition-delay: 0.3s;"><h3>Appeals</h3></a>
-                <a href="domestic-assault.html" class="service-card reveal" style="transition-delay: 0.4s;"><h3>Domestic Assault</h3></a>
+                <a href="sexual-assault.html" class="service-card reveal" style="transition-delay: 0.1s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    <h3>Sexual Assault /<br>Sexual Offences</h3>
+                </a>
+                
+                <a href="dui.html" class="service-card reveal" style="transition-delay: 0.2s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 16H9m10 0h3v-3.15a1 1 0 0 0-.84-.99L16 11l-2.7-3.6a2 2 0 0 0-1.6-.8H9.3a2 2 0 0 0-1.6.8L5 11l-5.16.86a1 1 0 0 0-.84.99V16h3m14 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM7 16a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"></path></svg>
+                    <h3>DUI /<br>Impaired Driving</h3>
+                </a>
+
+                <a href="drug-trafficking.html" class="service-card reveal" style="transition-delay: 0.3s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"></path><path d="m8.5 8.5 7 7"></path></svg>
+                    <h3>Drug Trafficking</h3>
+                </a>
+
+                <a href="firearms.html" class="service-card reveal" style="transition-delay: 0.4s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+                    <h3>Firearm Offences</h3>
+                </a>
+
+                <a href="extortion.html" class="service-card reveal" style="transition-delay: 0.1s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                    <h3>Extortion &<br>Harassment</h3>
+                </a>
+
+                <a href="murder.html" class="service-card reveal" style="transition-delay: 0.2s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m14 13-7.5 7.5c-.83.83-2.17.83-3 0 0 0 0 0 0 0a2.12 2.12 0 0 1 0-3L11 10"></path><path d="m16 16 6-6"></path><path d="m8 8 6-6"></path><path d="m9 7 8 8"></path><path d="m21 11-8-8"></path></svg>
+                    <h3>Murder &<br>Violent Crimes</h3>
+                </a>
+
+                <a href="appeals.html" class="service-card reveal" style="transition-delay: 0.3s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><polyline points="9 15 12 12 15 15"></polyline></svg>
+                    <h3>Appeals</h3>
+                </a>
+
+                <a href="domestic-assault.html" class="service-card reveal" style="transition-delay: 0.4s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                    <h3>Domestic Assault</h3>
+                </a>
             </div>
             
             <div style="margin-top: 40px;" class="reveal">
