@@ -62,9 +62,21 @@
         /* STICKY MOBILE CALL BUTTON CLASSES */
         .mobile-call-btn { display: none; }
 
+        .hamburger { display: none; background: transparent; border: none; color: white; cursor: pointer; padding: 5px; }
+
         /* Responsive Design */
         @media (max-width: 768px) {
-            .nav-links { display: none; }
+            /* MOBILE DROPDOWN MENU */
+            .hamburger { display: block; }
+            .nav-links { 
+                position: absolute; top: 100%; left: 0; width: 100%; 
+                background-color: rgba(30, 37, 60, 0.98); backdrop-filter: blur(10px);
+                flex-direction: column; gap: 0;
+                box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
+                max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
+            }
+            .nav-links.open { max-height: 300px; }
+            .nav-links a { padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.05); }
             .success-grid { grid-template-columns: 1fr; }
             .contact-grid { grid-template-columns: 1fr; }
             
@@ -83,10 +95,14 @@
     <nav>
         <div class="nav-inner">
             <div class="nav-brand"><a href="index.html" style="color: white; text-decoration: none;">TL Criminal Defence</a></div>
-            <div class="nav-links">
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+
+            <div class="nav-links" id="nav-links">
                 <a href="index.html#services">Services</a>
                 <a href="index.html#about">About</a>
-                <a href="#">Successes</a>
+                <a href="successes.html">Successes</a>
                 <a href="#contact">Contact</a>
             </div>
         </div>
@@ -225,6 +241,18 @@
     <a href="tel:3659994249" class="mobile-call-btn" style="display: none;">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
     </a>
-
+<script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // HAMBURGER MENU DROPDOWN
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            
+            if(hamburger && navLinks) {
+                hamburger.addEventListener('click', () => {
+                    navLinks.classList.toggle('open');
+                });
+            }
+        });
+    </script>
 </body>
 </html>
