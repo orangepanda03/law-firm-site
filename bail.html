@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bail Hearings & Reviews | Toronto Criminal Defence Lawyer</title>
+
+    <meta property="og:title" content="Bail Hearings & Reviews | TL Criminal Defence">
+    <meta property="og:description" content="Secure your freedom. Trevor Lau provides aggressive representation for bail hearings and bail reviews across Toronto and Ontario. Available 24/7 for urgent bail matters.">
+    <meta property="og:image" content="https://tlcriminaldefence.ca/hero-bg.jpg">
+    <meta property="og:url" content="https://tlcriminaldefence.ca/bail.html">
+    <meta property="og:type" content="website">
+
+    <style>
+        /* Base Reset & Uniform Professional Typography */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body, h1, h2, h3, a, p, span, div, li { 
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        body { line-height: 1.6; color: #1e293b; background-color: #f8fafc; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Navigation */
+        nav { background-color: #1e253c; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
+        nav.scrolled { background-color: rgba(30, 37, 60, 0.95); backdrop-filter: blur(10px); box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.2); }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 90px; padding: 0 40px; transition: height 0.3s ease; }
+        nav.scrolled .nav-inner { height: 70px; }
+        
+        .nav-brand, .nav-brand a { 
+            color: white; font-size: 1.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; 
+            font-family: "Garamond", Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+            text-decoration: none; transition: font-size 0.3s ease;
+        }
+        nav.scrolled .nav-brand, nav.scrolled .nav-brand a { font-size: 1.5rem; }
+        
+        .hamburger { display: none; background: transparent; border: none; color: white; cursor: pointer; padding: 5px; }
+        
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a { color: white; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; transition: color 0.3s; }
+        .nav-links a:hover { color: #3b82f6; }
+
+        /* Page Header */
+        .page-header { background-color: #0f172a; color: white; padding: 140px 20px 80px; text-align: center; }
+        .page-header h1 { font-size: 3rem; margin-bottom: 15px; font-family: "Garamond", Baskerville, serif; font-weight: 700; }
+        .page-header p { font-size: 1.2rem; color: #cbd5e1; max-width: 700px; margin: 0 auto; }
+
+        /* Service Content */
+        .service-content { background-color: white; padding: 80px 0; }
+        .text-block { max-width: 800px; margin: 0 auto; font-size: 1.15rem; color: #334155; }
+        .text-block h2 { color: #0f172a; font-size: 2.2rem; margin-bottom: 20px; margin-top: 50px; font-weight: 700; }
+        .text-block h2:first-child { margin-top: 0; }
+        .text-block h3 { color: #1e40af; font-size: 1.5rem; margin-bottom: 15px; margin-top: 40px; font-weight: 600; }
+        .text-block p { margin-bottom: 25px; line-height: 1.8; }
+        .text-block ul { margin-bottom: 25px; padding-left: 20px; }
+        .text-block li { margin-bottom: 10px; line-height: 1.8; }
+        .text-block strong { color: #0f172a; }
+
+        /* Contact Section */
+        .contact { background-color: #0f172a; color: white; padding: 80px 0; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .contact h2 { font-size: 2.5rem; margin-bottom: 20px; font-weight: 700; }
+        .contact p { color: #cbd5e1; font-size: 1.1rem; margin-bottom: 20px; }
+        .contact-card { background: white; color: #0f172a; padding: 40px; border-radius: 12px; }
+        .contact-card h3 { border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; margin-bottom: 20px; font-size: 1.5rem; font-weight: 700; }
+        .contact-item { margin-bottom: 20px; }
+        .contact-label { font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        .contact-value { font-size: 1.2rem; font-weight: bold; color: #0f172a; text-decoration: none; }
+        .contact-value.link { color: #1d4ed8; }
+        .btn-blue { background-color: #1d4ed8; color: white; display: inline-block; padding: 15px 35px; border-radius: 6px; font-weight: bold; text-decoration: none; transition: all 0.3s; }
+        .btn-blue:hover { background-color: #1e40af; }
+
+        /* Footer */
+        footer { background-color: #020617; color: #64748b; text-align: center; padding: 30px 20px; font-size: 0.9rem; }
+
+        /* SCROLL ANIMATION CLASSES */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* STICKY MOBILE CALL BUTTON */
+        .mobile-call-btn { display: none; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .page-header { padding: 120px 20px 60px; }
+            .page-header h1 { font-size: 2.2rem; }
+            .contact-grid { grid-template-columns: 1fr; }
+            
+            .mobile-call-btn { 
+                display: flex; position: fixed; bottom: 20px; right: 20px; 
+                background-color: #d4af37; color: #0f172a; 
+                width: 60px; height: 60px; border-radius: 50%; 
+                align-items: center; justify-content: center;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 9999; 
+            }
+
+            /* MOBILE DROPDOWN MENU */
+            .hamburger { display: block; }
+            .nav-links { 
+                position: absolute; top: 100%; left: 0; width: 100%; 
+                background-color: rgba(30, 37, 60, 0.98); backdrop-filter: blur(10px);
+                flex-direction: column; gap: 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
+                max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
+            }
+            .nav-links.open { max-height: 300px; }
+            .nav-links a { padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-inner">
+            <div class="nav-brand"><a href="index.html">TL Criminal Defence</a></div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html#services">Services</a>
+                <a href="index.html#about">About</a>
+                <a href="successes.html">Successes</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container reveal active">
+            <h1>Bail Hearings & Reviews</h1>
+            <p>Securing your release is the most critical first step in defending your case.</p>
+        </div>
+    </header>
+
+    <section class="service-content">
+        <div class="container">
+            <div class="text-block reveal">
+                <h2>The Importance of a Bail Hearing</h2>
+                <p>When you or a loved one is arrested and held for a bail hearing (also known as a "show cause" hearing), time is of the essence. A bail hearing is arguably the most important stage of the criminal justice process. If bail is denied, you could remain in a detention centre for months, or even years, awaiting your trial.</p>
+                <p>Being detained severely impacts your ability to keep your job, support your family, and actively assist in the preparation of your own legal defence. Having an experienced criminal defence lawyer by your side immediately ensures that a comprehensive, airtight release plan is presented to the court.</p>
+
+                <h3>How Bail Works in Ontario</h3>
+                <p>In Canadian law, there is a presumption of innocence and a constitutional right not to be denied reasonable bail without just cause. The Crown must legally justify why you should be kept in custody. They typically argue detention based on three primary grounds:</p>
+                <ul>
+                    <li><strong>Primary Ground:</strong> The court believes you are a "flight risk" and will not attend court as required.</li>
+                    <li><strong>Secondary Ground:</strong> The court believes your release poses a substantial likelihood of danger to the public, or that you will commit further offences or interfere with the administration of justice.</li>
+                    <li><strong>Tertiary Ground:</strong> The court believes your release would cause the public to lose confidence in the administration of justice, considering the gravity of the offence and the strength of the Crown's case.</li>
+                </ul>
+                <p>A skilled defence lawyer anticipates these arguments and prepares a proactive strategy. This often involves interviewing potential sureties (people willing to supervise you), proposing strict but livable conditions, and organizing a release plan that mitigates any of the Crown's concerns.</p>
+
+                <h2>Bail Reviews</h2>
+                <p>If you have already had a bail hearing and were ordered detained, or if you were released but given overly restrictive conditions (such as an unmanageable curfew or house arrest), the fight is not over. You have the right to apply for a <strong>Bail Review</strong> in the Superior Court of Justice.</p>
+                <p>A Bail Review is not a second chance to run the exact same hearing; you must demonstrate that the original judge made an error in law, or that there has been a "material change in circumstances" since your initial hearing (such as finding a new, stronger surety or entering a residential treatment program).</p>
+
+                <h3>Why Choose TL Criminal Defence?</h3>
+                <p>Trevor Lau has extensive experience conducting highly contested bail hearings and complex bail reviews in both the Ontario Court of Justice and the Superior Court of Justice. He understands the urgency of these situations and works relentlessly to build robust release plans, ensuring clients can return home to their families while fighting their charges.</p>
+                <p>If you or a family member has been arrested, do not wait. Early intervention is the key to a successful release.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container contact-grid">
+            <div class="reveal">
+                <h2>Start with a free consultation.</h2>
+                <p>Being charged with a criminal offence is a life-changing event. You deserve honest communication and a rigorous defence throughout the criminal justice process.</p>
+                <p>Contact TL Criminal Defence for experienced representation against any and all kinds of criminal charges.</p>
+                <p style="color: #ea580c; font-weight: bold; font-size: 1.2rem; margin-top: 20px;">Serving clients across the GTA and all of Ontario.</p>
+            </div>
+            
+            <div class="contact-card reveal" style="transition-delay: 0.2s;">
+                <h3>Contact Details</h3>
+                <div class="contact-item">
+                    <div class="contact-label">Lawyer</div>
+                    <div class="contact-value">Trevor Lau</div>
+                    <div style="color: #64748b; font-size: 0.95rem;">TL Criminal Defence</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">Phone</div>
+                    <a href="tel:6477456696" class="contact-value link">(647) 745-6696</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">Email</div>
+                    <a href="mailto:trevor@tlcriminaldefence.ca" class="contact-value link">trevor@tlcriminaldefence.ca</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">Office</div>
+                    <div style="font-size: 1.1rem; color: #334155;">130 Spadina Ave., Suite 606<br>Toronto, ON M5V 2L4</div>
+                </div>
+                <a href="tel:6477456696" class="btn btn-blue" style="display: block; text-align: center; margin-top: 30px;">GET CONSULTATION</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 TL Criminal Defence. All Rights Reserved. Not legal advice until formally retained.</p>
+    </footer>
+
+    <a href="tel:6477456696" class="mobile-call-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+    </a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // STICKY HEADER ENHANCEMENT
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+            
+            // HAMBURGER MENU DROPDOWN
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            
+            if(hamburger && navLinks) {
+                hamburger.addEventListener('click', () => {
+                    navLinks.classList.toggle('open');
+                });
+                
+                // Closes menu when a link is clicked
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('open');
+                    });
+                });
+            }
+
+            // SCROLL ANIMATION CLASSES
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { 
+                threshold: 0.1 
+            });
+
+            document.querySelectorAll('.reveal').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
