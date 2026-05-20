@@ -24,4 +24,253 @@
         /* Navigation */
         nav { background-color: #1e253c; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
         nav.scrolled { background-color: rgba(30, 37, 60, 0.95); backdrop-filter: blur(10px); box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.2); }
-        .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 90px; padding: 0 40px; transition: height 0.3s ease
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 90px; padding: 0 40px; transition: height 0.3s ease; }
+        nav.scrolled .nav-inner { height: 70px; }
+        
+        .nav-brand, .nav-brand a { 
+            color: white; font-size: 1.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; 
+            font-family: "Garamond", Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+            text-decoration: none; transition: font-size 0.3s ease;
+        }
+        nav.scrolled .nav-brand, nav.scrolled .nav-brand a { font-size: 1.5rem; }
+        
+        .hamburger { display: none; background: transparent; border: none; color: white; cursor: pointer; padding: 5px; }
+        
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a { color: white; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; transition: color 0.3s; }
+        .nav-links a:hover { color: #3b82f6; }
+
+        /* Article Header */
+        .article-header { background-color: #0f172a; color: white; padding: 120px 20px 80px; text-align: center; }
+        .article-header h1 { font-size: 3rem; margin-bottom: 20px; font-family: "Garamond", Baskerville, serif; font-weight: 700; max-width: 900px; margin-left: auto; margin-right: auto; line-height: 1.2; }
+        
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: #cbd5e1; text-decoration: none; font-weight: bold; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px; transition: color 0.3s; }
+        .back-link:hover { color: #ea580c; }
+
+        /* Article Content */
+        .article-content { background-color: white; padding: 60px 0 80px; }
+        .text-block { max-width: 750px; margin: 0 auto; font-size: 1.15rem; color: #334155; }
+        .text-block h3 { color: #0f172a; font-size: 1.8rem; margin-bottom: 15px; margin-top: 40px; font-weight: 700; }
+        .text-block p { margin-bottom: 25px; line-height: 1.8; }
+        .text-block ul { margin-bottom: 25px; padding-left: 20px; }
+        .text-block li { margin-bottom: 15px; line-height: 1.8; }
+        .text-block strong { color: #0f172a; }
+        
+        /* SEO In-Text Links */
+        .text-block a { color: #1d4ed8; text-decoration: underline; font-weight: 600; transition: color 0.3s; }
+        .text-block a:hover { color: #ea580c; }
+
+        /* Blog Disclaimer Box */
+        .disclaimer-box { background-color: #f8fafc; border-left: 4px solid #64748b; padding: 25px; margin-top: 50px; font-size: 0.95rem; color: #475569; font-style: italic; line-height: 1.6; border-radius: 0 8px 8px 0; }
+
+        /* Contact Section */
+        .contact { background-color: #0f172a; color: white; padding: 80px 0; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .contact h2 { font-size: 2.5rem; margin-bottom: 20px; font-weight: 700; }
+        .contact p { color: #cbd5e1; font-size: 1.1rem; margin-bottom: 20px; }
+        .contact-card { background: white; color: #0f172a; padding: 40px; border-radius: 12px; }
+        .contact-card h3 { border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; margin-bottom: 20px; font-size: 1.5rem; font-weight: 700; }
+        .contact-item { margin-bottom: 20px; }
+        .contact-label { font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+        .contact-value { font-size: 1.2rem; font-weight: bold; color: #0f172a; text-decoration: none; }
+        .contact-value.link { color: #1d4ed8; }
+        .btn-blue { background-color: #1d4ed8; color: white; display: inline-block; padding: 15px 35px; border-radius: 6px; font-weight: bold; text-decoration: none; transition: all 0.3s; }
+        .btn-blue:hover { background-color: #1e40af; }
+
+        /* Footer */
+        footer { background-color: #020617; color: #64748b; text-align: center; padding: 30px 20px; font-size: 0.9rem; }
+
+        /* SCROLL ANIMATION CLASSES */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* STICKY MOBILE CALL BUTTON */
+        .mobile-call-btn { display: none; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .article-header { padding: 100px 20px 60px; }
+            .article-header h1 { font-size: 2.2rem; }
+            .contact-grid { grid-template-columns: 1fr; }
+            
+            .mobile-call-btn { 
+                display: flex; position: fixed; bottom: 20px; right: 20px; 
+                background-color: #d4af37; color: #0f172a; 
+                width: 60px; height: 60px; border-radius: 50%; 
+                align-items: center; justify-content: center;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 9999; 
+            }
+
+            /* MOBILE DROPDOWN MENU */
+            .hamburger { display: block; }
+            .nav-links { 
+                position: absolute; top: 100%; left: 0; width: 100%; 
+                background-color: rgba(30, 37, 60, 0.98); backdrop-filter: blur(10px);
+                flex-direction: column; gap: 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
+                max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
+            }
+            .nav-links.open { max-height: 350px; }
+            .nav-links a { padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-inner">
+            <div class="nav-brand"><a href="index.html">TL Criminal Defence</a></div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html#services">Services</a>
+                <a href="index.html#about">About</a>
+                <a href="successes.html">Successes</a>
+                <a href="blog.html">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="article-header">
+        <div class="container reveal active">
+            <a href="blog.html" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Legal Insights
+            </a>
+            <h1>Who Can Be a Surety for Bail in Ontario? (And Who Cannot)</h1>
+        </div>
+    </header>
+
+    <section class="article-content">
+        <div class="container">
+            <div class="text-block reveal">
+                <p>When a family member or loved one is arrested and held for a bail hearing, the immediate reaction is panic. The first question families ask is almost always: <em>How do I get them out?</em> In Ontario, securing someone's release usually requires a <strong>surety</strong>. As a <a href="index.html">Toronto bail lawyer</a>, I receive frantic calls from parents, spouses, and friends who want to help but don't know if they are legally allowed to.</p>
+                
+                <p>If your loved one is facing a <a href="bail.html">show cause hearing</a> (the legal term for a bail hearing), the court will heavily scrutinize anyone offering to be a surety. Here is exactly what the court looks for, who qualifies, and who does not.</p>
+
+                <h3>What Does a Surety Actually Do?</h3>
+                <p>Many people mistakenly believe a surety is just a financial sponsor—someone who pays the court to let the accused out. This is a myth.</p>
+                <p>In the eyes of the court, a surety is a <strong>"jailer in the community."</strong> If the judge grants bail, you are taking responsibility for the accused person's behavior. Your job is to supervise them, ensure they attend all their court dates, and make sure they follow their strict bail conditions (like a curfew or a no-contact order).</p>
+                <p>If the accused breaks a rule and you do not immediately report them to the police, you risk losing the money you pledged to the court.</p>
+
+                <h3>Who Qualifies as a Surety in Ontario?</h3>
+                <p>To be approved by a judge or Justice of the Peace, a proposed surety must meet several baseline requirements:</p>
+                <ul>
+                    <li><strong>Age and Status:</strong> You must be at least 18 years old and a Canadian citizen or permanent resident.</li>
+                    <li><strong>Financial Capability:</strong> You must have assets (like home equity, savings in a bank account, or investments) to pledge to the court. You cannot pledge money that you borrowed or that the accused person gave you.</li>
+                    <li><strong>Relationship to the Accused:</strong> Courts prefer sureties who have a close, established relationship with the accused, such as a parent, sibling, long-term partner, or employer. You need to prove you have the authority and influence to actually make the accused listen to you.</li>
+                </ul>
+
+                <h3>Who Cannot Be a Surety?</h3>
+                <p>Even if you have plenty of money and good intentions, the court will disqualify you from acting as a surety if:</p>
+                <ul>
+                    <li><strong>You have a relevant criminal record:</strong> A very old, minor charge might not disqualify you, but recent convictions or any crimes involving dishonesty (like perjury or fraud) usually will.</li>
+                    <li><strong>You are a co-accused:</strong> You cannot be a surety for someone if you were charged with a crime in the exact same incident.</li>
+                    <li><strong>You live out of province:</strong> While exceptions exist, courts strongly prefer sureties who live in Ontario (and ideally in the same city as the accused) so they can physically supervise them.</li>
+                    <li><strong>You are already a surety for someone else:</strong> Courts rarely allow a person to act as a surety for multiple people at the same time.</li>
+                </ul>
+
+                <h3>The "Cash Bail" Myth</h3>
+                <p>People often ask me, "How much cash do I need to bring to the courthouse?"</p>
+                <p>Unlike the system you see on American television, <strong>Ontario rarely requires upfront cash for bail.</strong> Instead, a surety makes a promise—a pledge—to the court. For example, if bail is set at $5,000, you do not hand over $5,000 in cash. You simply sign a legal document pledging that amount. You only lose the money if the accused breaches their conditions and you fail to report it.</p>
+                <p><em>(Note: Cash deposits are sometimes required if the accused lives outside of Ontario or if they are facing specific, highly serious charges, but this is the exception, not the rule).</em></p>
+
+                <h3>Why You Need to Act Fast</h3>
+                <p>Bail court moves incredibly fast. Whether you are navigating the downtown courts or dealing with an arrest in Peel Region and need a <a href="index.html">bail lawyer in Brampton</a>, showing up to court without a thoroughly prepared surety plan is a massive risk. If the judge rejects you as a surety, the accused will be sent back to the detention centre, and getting a second chance at bail becomes significantly harder.</p>
+                <p>A strong defence starts with securing freedom. If your loved one has been arrested, do not wait. Contact TL Criminal Defence immediately to build an airtight release plan and fight for their freedom.</p>
+                
+                <div class="disclaimer-box">
+                    <strong>Disclaimer:</strong> The information provided in this blog post is for general informational purposes only and does not constitute legal advice. Reading this article does not establish a lawyer-client relationship. Every case is unique and the law is constantly evolving. If you require legal advice for your specific situation, please contact TL Criminal Defence directly for a consultation.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container contact-grid">
+            <div class="reveal">
+                <h2>Start with a free consultation.</h2>
+                <p>Being charged with a criminal offence is a life-changing event. You deserve honest communication and a rigorous defence throughout the criminal justice process.</p>
+                <p>Contact TL Criminal Defence for experienced representation against any and all kinds of criminal charges.</p>
+                <p style="color: #ea580c; font-weight: bold; font-size: 1.2rem; margin-top: 20px;">Serving clients across the GTA and all of Ontario.</p>
+            </div>
+            
+            <div class="contact-card reveal" style="transition-delay: 0.2s;">
+                <h3>Contact Details</h3>
+                <div class="contact-item">
+                    <div class="contact-label">Lawyer</div>
+                    <div class="contact-value">Trevor Lau</div>
+                    <div style="color: #64748b; font-size: 0.95rem;">TL Criminal Defence</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">Phone</div>
+                    <a href="tel:6477456696" class="contact-value link">(647) 745-6696</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">Email</div>
+                    <a href="mailto:trevor@tlcriminaldefence.ca" class="contact-value link">trevor@tlcriminaldefence.ca</a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">Office</div>
+                    <div style="font-size: 1.1rem; color: #334155;">130 Spadina Ave., Suite 606<br>Toronto, ON M5V 2L4</div>
+                </div>
+                <a href="tel:6477456696" class="btn btn-blue" style="display: block; text-align: center; margin-top: 30px;">GET CONSULTATION</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 TL Criminal Defence. All Rights Reserved. Not legal advice until formally retained.</p>
+    </footer>
+
+    <a href="tel:6477456696" class="mobile-call-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+    </a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+            
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            
+            if(hamburger && navLinks) {
+                hamburger.addEventListener('click', () => {
+                    navLinks.classList.toggle('open');
+                });
+                
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('open');
+                    });
+                });
+            }
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { 
+                threshold: 0.1 
+            });
+
+            document.querySelectorAll('.reveal').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
