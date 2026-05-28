@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Section 276: Prior Sexual History | TL Criminal Defence</title>
+
+    <meta property="og:title" content="Understanding Section 276 of the Criminal Code">
+    <meta property="og:description" content="Learn how evidence of prior sexual history is reviewed in Canadian courts, the twin myths, and the rigorous procedural test required for admission.">
+    <meta property="og:image" content="https://tlcriminaldefence.ca/hero-bg.jpg">
+    <meta property="og:url" content="https://tlcriminaldefence.ca/blog-section-276.html">
+    <meta property="og:type" content="article">
+
+    <style>
+        /* Base Reset & Uniform Professional Typography */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body, h1, h2, h3, a, p, span, div, li { 
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        body { line-height: 1.6; color: #1e293b; background-color: #f8fafc; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Navigation */
+        nav { background-color: #1e253c; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
+        nav.scrolled { background-color: rgba(30, 37, 60, 0.95); backdrop-filter: blur(10px); box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.2); }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 90px; padding: 0 40px; transition: height 0.3s ease; }
+        nav.scrolled .nav-inner { height: 70px; }
+        
+        .nav-brand, .nav-brand a { 
+            color: white; font-size: 1.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; 
+            font-family: "Garamond", Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+            text-decoration: none; transition: font-size 0.3s ease;
+        }
+        nav.scrolled .nav-brand, nav.scrolled .nav-brand a { font-size: 1.5rem; }
+        
+        .hamburger { display: none; background: transparent; border: none; color: white; cursor: pointer; padding: 5px; }
+        
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a { color: white; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; transition: color 0.3s; }
+        .nav-links a:hover { color: #3b82f6; }
+
+        /* Article Header */
+        .article-header { background-color: #0f172a; color: white; padding: 120px 20px 80px; text-align: center; }
+        .article-header h1 { font-size: 3rem; margin-bottom: 20px; font-family: "Garamond", Baskerville, serif; font-weight: 700; max-width: 900px; margin-left: auto; margin-right: auto; line-height: 1.2; }
+        
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: #cbd5e1; text-decoration: none; font-weight: bold; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px; transition: color 0.3s; }
+        .back-link:hover { color: #ea580c; }
+
+        /* Article Content */
+        .article-content { background-color: white; padding: 60px 0 80px; }
+        .text-block { max-width: 750px; margin: 0 auto; font-size: 1.15rem; color: #334155; }
+        .text-block h2 { color: #0f172a; font-size: 2.2rem; margin-bottom: 15px; margin-top: 50px; font-weight: 700; }
+        .text-block h3 { color: #0f172a; font-size: 1.5rem; margin-bottom: 15px; margin-top: 40px; font-weight: 700; }
+        .text-block p { margin-bottom: 25px; line-height: 1.8; }
+        .text-block ol, .text-block ul { margin-bottom: 25px; padding-left: 20px; }
+        .text-block li { margin-bottom: 15px; line-height: 1.8; }
+        .text-block strong { color: #0f172a; }
+        
+        /* SEO In-Text Links */
+        .text-block a { color: #1d4ed8; text-decoration: underline; font-weight: 600; transition: color 0.3s; }
+        .text-block a:hover { color: #ea580c; }
+
+        /* Blog Disclaimer Box */
+        .disclaimer-box { background-color: #f8fafc; border-left: 4px solid #64748b; padding: 25px; margin-top: 50px; font-size: 0.95rem; color: #475569; font-style: italic; line-height: 1.6; border-radius: 0 8px 8px 0; }
+
+        /* Contact Section */
+        .contact { background-color: #0f172a; color: white; padding: 80px 0; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .contact h2 { font-size: 2.5rem; margin-bottom: 20px; font-weight: 700; }
+        .contact p { color: #cbd5e1; font-size: 1.1rem; margin-bottom: 20px; }
+        .contact-card { background: white; color: #0f172a; padding: 40px; border-radius: 12px; }
+        .contact-card h3 { border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; margin-bottom: 20px; font-size: 1.5rem; font-weight: 700; }
+        .btn-blue { background-color: #1d4ed8; color: white; display: inline-block; padding: 15px 35px; border-radius: 6px; font-weight: bold; text-decoration: none; transition: all 0.3s; }
+        .btn-blue:hover { background-color: #1e40af; }
+        .urgent-link { color: white; text-decoration: none; transition: color 0.3s; }
+        .urgent-link:hover { color: #3b82f6; }
+
+        /* Footer */
+        footer { background-color: #020617; color: #64748b; text-align: center; padding: 30px 20px; font-size: 0.9rem; }
+
+        /* SCROLL ANIMATION CLASSES */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* STICKY MOBILE CALL BUTTON */
+        .mobile-call-btn { display: none; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .article-header { padding: 100px 20px 60px; }
+            .article-header h1 { font-size: 2.2rem; }
+            .contact-grid { grid-template-columns: 1fr; }
+            
+            .mobile-call-btn { 
+                display: flex; position: fixed; bottom: 20px; right: 20px; 
+                background-color: #d4af37; color: #0f172a; 
+                width: 60px; height: 60px; border-radius: 50%; 
+                align-items: center; justify-content: center;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 9999; 
+            }
+
+            /* MOBILE DROPDOWN MENU */
+            .hamburger { display: block; }
+            .nav-links { 
+                position: absolute; top: 100%; left: 0; width: 100%; 
+                background-color: rgba(30, 37, 60, 0.98); backdrop-filter: blur(10px);
+                flex-direction: column; gap: 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
+                max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
+            }
+            .nav-links.open { max-height: 350px; }
+            .nav-links a { padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-inner">
+            <div class="nav-brand"><a href="index.html">TL Criminal Defence</a></div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html#services">Services</a>
+                <a href="index.html#about">About</a>
+                <a href="successes.html">Successes</a>
+                <a href="blog.html">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="article-header">
+        <div class="container reveal active">
+            <a href="blog.html" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Legal Insights
+            </a>
+            <h1>Understanding Section 276 of the Criminal Code: How Evidence of Prior Sexual History is Reviewed in Canadian Courts</h1>
+        </div>
+    </header>
+
+    <section class="article-content">
+        <div class="container">
+            <div class="text-block reveal">
+                <p>The Canadian criminal justice system strives to protect the ability of triers of fact to uncover the truth while balancing complex trial fairness considerations. In <a href="index.html#services">sexual assault cases</a>, navigating the balance between an accused person’s right to make a full answer and defence and a complainant's right to privacy, dignity, and equality is a critical challenge.</p>
+                
+                <p>Section 276 of the <em>Criminal Code</em> governs this delicate boundary, serving as a statutory filter for evidence concerning a complainant's other sexual activities. Here is an analytical look at what Section 276 is, when it applies, and the specific grounds under which an accused can legally seek to admit evidence of prior sexual history.</p>
+
+                <h2>Dismantling the "Twin Myths" (Section 276(1))</h2>
+                <p>At the core of Section 276 is an absolute, categorical bar against using a complainant's prior sexual history to invoke discriminatory or stereotypical lines of reasoning. These are legally known as the <strong>"twin myths"</strong>:</p>
+                <ul>
+                    <li><strong>The First Myth:</strong> The inference that, by reason of the sexual nature of prior activities, the complainant is more likely to have consented to the sexual activity in question.</li>
+                    <li><strong>The Second Myth:</strong> The inference that a complainant is less worthy of belief or less reliable as a witness due to the sexual nature of their past.</li>
+                </ul>
+                <p>Canadian law establishes that these myths rely on false logic, carry no relevance, and severely distort the truth-seeking function of a trial. Consequently, if the sole purpose of introducing prior sexual history is to support either of these myths, the evidence is strictly inadmissible. Relying on these myths to discredit a complainant constitutes a reversible error of law reviewable on a standard of correctness.</p>
+
+                <h2>When is the Section 276 Regime Triggered?</h2>
+                <p>Section 276 has a remarkably broad relational scope. It applies to proceedings <strong>"in respect of"</strong> a wide array of sexual offences listed under subsection (1).</p>
+                <p>Crucially, the Supreme Court of Canada has clarified that the regime applies to any proceeding where a listed sexual offence has a connection to the crime charged, even if no sexual offence is explicitly particularized in the main charging document. For instance, in <em>R. v. Barton</em>, the regime was engaged in a first-degree murder trial because the prosecution's theory alternative was premised on an unlawful act manslaughter in the course of a sexual assault.</p>
+
+                <h3>The Inclusion of "Relationship Evidence"</h3>
+                <p>The rules of Section 276 are not limited to discrete, individual sexual acts; they also encompass general "relationship evidence" from which past sexual intimacy can reasonably be inferred. Reviewing courts have held that phrases characterizing an ongoing interaction as a "friends with benefits" arrangement or a regular spousal relationship directly engage Section 276(1) and are presumptively inadmissible unless they pass through the statutory screening process.</p>
+
+                <h2>The Three-Part Admissibility Test (Section 276(2))</h2>
+                <p>For an accused to successfully introduce evidence of a complainant's prior sexual history for a legitimate, non-myth purpose, the evidence must pass a strict three-fold statutory test under Section 276(2):</p>
+                <ol>
+                    <li><strong>Specific Instances:</strong> The evidence must be of specific instances of sexual activity. For general relationship evidence, this requirement is satisfied by clearly identifying the specific parties, the nature of the relationship, and the relevant time period.</li>
+                    <li><strong>Relevance to a Live Trial Issue:</strong> The accused must identify with precision how the evidence connects to a specific, legitimate aspect of their defence. Generic references to "context," "narrative," or a broad invocation of "credibility" are legally insufficient to unlock this barrier.</li>
+                    <li><strong>Significant Probative Value:</strong> The evidence must carry significant probative value that is not substantially outweighed by the danger of prejudice to the proper administration of justice. This requirement explicitly eliminates evidence of trifling relevance. If an accused cannot prove specific relevance beyond a forbidden myth, the evidence automatically holds zero probative value.</li>
+                </ol>
+                <p>When conducting this balancing act, judges must rigorously evaluate specific factors under Section 276(3). This includes weighing the accused’s right to make a full answer and defence against society's interest in encouraging the reporting of offences, the complainant's personal dignity, security, and right to privacy.</p>
+
+                <h2>The Step-by-Step Procedure for the Accused</h2>
+                <p>An accused person cannot simply bring up or testify about a complainant's sexual past mid-trial without prior judicial authorization. The <em>Criminal Code</em> mandates a strict procedural pathway:</p>
+                <ul>
+                    <li><strong>The Written Application:</strong> The accused must submit a formal written application containing "detailed particulars" of the specific evidence they wish to adduce and an explicit statement explaining its exact relevance to a live trial issue. If the application fails to satisfy these requirements, the judge is legally empowered to dismiss it outright without a hearing.</li>
+                    <li><strong>The In Camera Voir Dire:</strong> If the judge finds the application is capable of meeting the admissibility criteria, a separate evidentiary hearing (a <em>voir dire</em>) must be ordered outside the presence of the jury and the public. To protect the privacy and dignity of the complainant, the general public is excluded, and the complainant is not a compellable witness.</li>
+                    <li><strong>Mandatory Limiting Instructions:</strong> If any part of the evidence is deemed admissible after the hearing, the trial judge must issue detailed, clear instructions to the jury. These instructions must explicitly dictate both the precise permissible and impermissible uses of that evidence.</li>
+                </ul>
+
+                <h2>Common Grounds of Relevance to Admit Evidence of Sexual History</h2>
+                <p>Because generic references to "context" or "narrative" are legally insufficient to justify the admission of sexual history evidence, the defence must anchor its application to specific, valid legal frameworks. Over decades of jurisprudence, Canadian courts have identified narrow, legitimate pathways where an accused’s right to a fair trial overrides the presumptive bar:</p>
+
+                <h3>1. Specific Motives to Fabricate</h3>
+                <p>Established as a potentially permissible ground in <em>R. v. Seaboyer</em>, evidence of prior sexual history may be admitted if it directly points to a specific bias or an ulterior motive to fabricate on the part of the complainant. The Supreme Court of Canada in <em>R. v. Kruk</em> confirmed that exploring a distinct, established motive to fabricate does not offend general rules, and trial judges are obliged to evaluate it to give full effect to the presumption of innocence when the defence adduces such evidence.</p>
+                <p>However, this cannot be a fishing expedition; the application must detail exactly how the specific past sexual activities generated the structural bias or motive in question.</p>
+
+                <h3>2. Rebutting the Characterization of the Relationship</h3>
+                <p>Prior sexual history can be explicitly relevant to resolve direct contradictions or inconsistencies between the complainant's and the accused's testimonies regarding the actual existence or nature of their relationship. For instance, if a complainant testifies that the dynamic between the parties was strictly a platonic friendship, the defence may seek to admit narrow relationship evidence—such as a "friends with benefits" arrangement—to expose these contradictions.</p>
+                <p>When the complainant textually denies a sexual component, the jury is entitled to look at the true relationship format solely to evaluate the complainant's general credibility. Triers of fact cannot properly evaluate an accused's testimony if they are left with a completely distorted or artificial representation of the circumstances surrounding how the parties interacted.</p>
+
+                <h3>3. Honest but Mistaken Belief in Communicated Consent</h3>
+                <p>An accused person responding to a sexual assault charge may rely on the defence of an honest but mistaken belief in communicated consent. To establish an "air of reality" for this defence, the accused must demonstrate that they honestly believed the complainant effectively said "yes" through explicit words or conduct, and that they took reasonable steps to ascertain that consent.</p>
+                <p>Prior sexual history cannot be used under the false logic that a person's sexual nature or past actions make them inherently more likely to consent today. However, specific past sexual activities may be admissible if they establish clear, legitimate expectations, customs, or distinct negotiated practices between those two specific parties regarding exactly how consent is routinely communicated between them.</p>
+                
+                <div class="disclaimer-box">
+                    <strong>Disclaimer:</strong> The information provided in this blog post is for general informational purposes only and does not constitute legal advice. Reading this article does not establish a lawyer-client relationship. Every case is unique and the law is constantly evolving. If you require legal advice for your specific situation, please contact TL Criminal Defence directly for a consultation.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container contact-grid">
+            <div class="reveal">
+                <h2>Start with a free consultation.</h2>
+                <p>Being charged with a criminal offence is a life-changing event. You deserve honest communication and a rigorous defence throughout the criminal justice process.</p>
+                <p>Contact TL Criminal Defence for experienced representation against any and all kinds of criminal charges.</p>
+                <p style="color: #ea580c; font-weight: bold; font-size: 1.2rem; margin-top: 20px;">Serving clients across the GTA and all of Ontario.</p>
+                
+                <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1);">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: white;">Need immediate assistance?</h3>
+                    <p style="margin-bottom: 20px; color: #cbd5e1;">For urgent bail matters or immediate legal counsel, please reach out directly.</p>
+                    <div style="display: flex; flex-direction: column; gap: 15px;">
+                        <a href="tel:6477456696" class="urgent-link" style="display: inline-flex; align-items: center; gap: 10px; font-size: 1.2rem; font-weight: bold;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 
+                            (647) 745-6696
+                        </a>
+                        <a href="mailto:trevor@tlcriminaldefence.ca" class="urgent-link" style="display: inline-flex; align-items: center; gap: 10px; font-size: 1.1rem; font-weight: bold;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> 
+                            trevor@tlcriminaldefence.ca
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-card reveal" style="transition-delay: 0.2s;">
+                <h3>Send a Confidential Message</h3>
+                
+                <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                    <input type="hidden" name="access_key" value="035536c5-aa90-41a1-ba57-459d61557321">
+                    <input type="hidden" name="subject" value="New Case Inquiry - TL Criminal Defence">
+                    <input type="hidden" name="redirect" value="https://tlcriminaldefence.ca/index.html">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <div style="margin-bottom: 15px;">
+                        <label style="font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Your Name</label>
+                        <input type="text" name="name" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; margin-top: 5px; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#1d4ed8'" onblur="this.style.borderColor='#cbd5e1'">
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label style="font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Email or Phone Number</label>
+                        <input type="text" name="contact_info" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; margin-top: 5px; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#1d4ed8'" onblur="this.style.borderColor='#cbd5e1'">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Brief Case Overview</label>
+                        <textarea name="message" rows="4" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; margin-top: 5px; font-family: inherit; resize: vertical; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#1d4ed8'" onblur="this.style.borderColor='#cbd5e1'" placeholder="Please provide general details. Do not share highly confidential specifics."></textarea>
+                    </div>
+
+                    <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_PUBLIC_KEY_HERE" style="margin-bottom: 15px;"></div>
+
+                    <button type="submit" class="btn btn-blue" style="display: block; width: 100%; text-align: center; border: none; cursor: pointer; font-size: 1rem; font-weight: bold;">SUBMIT INQUIRY</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 TL Criminal Defence. All Rights Reserved. Not legal advice until formally retained.</p>
+    </footer>
+
+    <a href="tel:6477456696" class="mobile-call-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+    </a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Sticky Nav Shrink
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+            
+            // Mobile Dropdown Menu
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            
+            if(hamburger && navLinks) {
+                hamburger.addEventListener('click', () => {
+                    navLinks.classList.toggle('open');
+                });
+                
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('open');
+                    });
+                });
+            }
+
+            // Scroll Animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { 
+                threshold: 0.1 
+            });
+
+            document.querySelectorAll('.reveal').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</body>
+</html>
