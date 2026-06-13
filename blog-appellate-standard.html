@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard of Appellate Review in Canada: Law, Fact & Mixed Errors | TL Criminal Defence</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Standard of Appellate Review in Canada: Law, Fact & Mixed Errors">
+    <meta property="og:description" content="Thinking about appealing a trial decision? Discover how the type of mistake made by the trial judge dictates the strict standard of appellate review in Canada.">
+    <meta property="og:image" content="https://tlcriminaldefence.ca/hero-bg.jpg">
+    <meta property="og:url" content="https://tlcriminaldefence.ca/blog-appellate-standard.html">
+    <meta property="og:type" content="article">
+
+    <style>
+        /* Base Reset & Uniform Professional Typography */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body, h1, h2, h3, a, p, span, div, li, th, td { 
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        body { line-height: 1.6; color: #1e293b; background-color: #f8fafc; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Navigation */
+        nav { background-color: #1e253c; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
+        nav.scrolled { background-color: rgba(30, 37, 60, 0.95); backdrop-filter: blur(10px); box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.2); }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 90px; padding: 0 40px; transition: height 0.3s ease; }
+        nav.scrolled .nav-inner { height: 70px; }
+        
+        .nav-brand, .nav-brand a { 
+            color: white; font-size: 1.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; 
+            font-family: "Garamond", Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+            text-decoration: none; transition: font-size 0.3s ease;
+        }
+        nav.scrolled .nav-brand, nav.scrolled .nav-brand a { font-size: 1.5rem; }
+        
+        .hamburger { display: none; background: transparent; border: none; color: white; cursor: pointer; padding: 5px; }
+        
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a { color: white; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; transition: color 0.3s; }
+        .nav-links a:hover { color: #3b82f6; }
+
+        /* Article Header */
+        .article-header { background-color: #0f172a; color: white; padding: 120px 20px 80px; text-align: center; }
+        .article-header h1 { font-size: 3rem; margin-bottom: 20px; font-family: "Garamond", Baskerville, serif; font-weight: 700; max-width: 900px; margin-left: auto; margin-right: auto; line-height: 1.2; }
+        
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: #cbd5e1; text-decoration: none; font-weight: bold; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px; transition: color 0.3s; }
+        .back-link:hover { color: #ea580c; }
+
+        /* Article Content */
+        .article-content { background-color: white; padding: 60px 0 80px; }
+        .text-block { max-width: 800px; margin: 0 auto; font-size: 1.15rem; color: #334155; }
+        .text-block h2 { color: #0f172a; font-size: 2.2rem; margin-bottom: 15px; margin-top: 50px; font-weight: 700; }
+        .text-block h3 { color: #0f172a; font-size: 1.5rem; margin-bottom: 15px; margin-top: 40px; font-weight: 700; }
+        .text-block p { margin-bottom: 25px; line-height: 1.8; }
+        .text-block ol, .text-block ul { margin-bottom: 25px; padding-left: 20px; }
+        .text-block li { margin-bottom: 15px; line-height: 1.8; }
+        .text-block strong { color: #0f172a; }
+        .text-block blockquote { background-color: #f8fafc; border-left: 4px solid #ea580c; padding: 20px; margin: 30px 0; font-style: italic; color: #1e293b; border-radius: 0 8px 8px 0; }
+        
+        /* Table Styling */
+        .text-block table { width: 100%; border-collapse: collapse; margin-bottom: 35px; font-size: 1.05rem; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .text-block th, .text-block td { padding: 15px; border: 1px solid #e2e8f0; text-align: left; vertical-align: top; }
+        .text-block th { background-color: #f1f5f9; font-weight: 700; color: #0f172a; }
+        .text-block tr:nth-child(even) { background-color: #f8fafc; }
+
+        /* SEO In-Text Links */
+        .text-block a { color: #1d4ed8; text-decoration: underline; font-weight: 600; transition: color 0.3s; }
+        .text-block a:hover { color: #ea580c; }
+
+        /* Blog Disclaimer Box */
+        .disclaimer-box { background-color: #f8fafc; border-left: 4px solid #64748b; padding: 25px; margin-top: 50px; font-size: 0.95rem; color: #475569; font-style: italic; line-height: 1.6; border-radius: 0 8px 8px 0; }
+
+        /* Contact Section */
+        .contact { background-color: #0f172a; color: white; padding: 80px 0; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .contact h2 { font-size: 2.5rem; margin-bottom: 20px; font-weight: 700; }
+        .contact p { color: #cbd5e1; font-size: 1.1rem; margin-bottom: 20px; }
+        .contact-card { background: white; color: #0f172a; padding: 40px; border-radius: 12px; }
+        .contact-card h3 { border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; margin-bottom: 20px; font-size: 1.5rem; font-weight: 700; }
+        .btn-blue { background-color: #1d4ed8; color: white; display: inline-block; padding: 15px 35px; border-radius: 6px; font-weight: bold; text-decoration: none; transition: all 0.3s; }
+        .btn-blue:hover { background-color: #1e40af; }
+        .urgent-link { color: white; text-decoration: none; transition: color 0.3s; }
+        .urgent-link:hover { color: #3b82f6; }
+
+        /* Footer */
+        footer { background-color: #020617; color: #64748b; text-align: center; padding: 30px 20px; font-size: 0.9rem; }
+
+        /* SCROLL ANIMATION CLASSES */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* STICKY MOBILE CALL BUTTON */
+        .mobile-call-btn { display: none; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .article-header { padding: 100px 20px 60px; }
+            .article-header h1 { font-size: 2.2rem; }
+            .contact-grid { grid-template-columns: 1fr; }
+            .text-block table { font-size: 0.95rem; }
+            
+            .mobile-call-btn { 
+                display: flex; position: fixed; bottom: 20px; right: 20px; 
+                background-color: #d4af37; color: #0f172a; 
+                width: 60px; height: 60px; border-radius: 50%; 
+                align-items: center; justify-content: center;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 9999; 
+            }
+
+            /* MOBILE DROPDOWN MENU */
+            .hamburger { display: block; }
+            .nav-links { 
+                position: absolute; top: 100%; left: 0; width: 100%; 
+                background-color: rgba(30, 37, 60, 0.98); backdrop-filter: blur(10px);
+                flex-direction: column; gap: 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
+                max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
+            }
+            .nav-links.open { max-height: 350px; }
+            .nav-links a { padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-inner">
+            <div class="nav-brand"><a href="index.html">TL Criminal Defence</a></div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html#services">Services</a>
+                <a href="index.html#about">About</a>
+                <a href="successes.html">Successes</a>
+                <a href="blog.html">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="article-header">
+        <div class="container reveal active">
+            <a href="blog.html" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Legal Insights
+            </a>
+            <h1>Overturning a Trial Judge: Understanding the Standards of Appellate Review in Canada</h1>
+        </div>
+    </header>
+
+    <section class="article-content">
+        <div class="container">
+            <div class="text-block reveal">
+                <p>One of the most widespread misconceptions about the Canadian justice system is that an appeal is simply a second trial—a legal "do-over" where you can re-argue your case before a new panel of judges in the hope of a better result.</p>
+                
+                <p>In reality, an appellate court is not a re-trial[cite: 11]. The Court of Appeal does not listen to live witnesses, nor does it look at the evidence with fresh eyes[cite: 11]. Instead, its power to intervene and overturn a judgment is strictly limited by a complex matrix known as the <strong>standard of appellate review</strong>[cite: 11].</p>
+
+                <p>If you are launching a civil or criminal appeal in Canada, your chances of success depend entirely on the <em>type</em> of error the trial judge made[cite: 11]. The Supreme Court of Canada established the definitive blueprint for these rules in the landmark case <a href="https://www.canlii.org/en/ca/scc/doc/2002/2002scc33/2002scc33.html" target="_blank" rel="noopener noreferrer"><strong><em>Housen v. Nikolaisen</em>, [2002] 2 S.C.R. 235</strong></a>[cite: 11].</p>
+
+                <p>Here is a plain-language guide to how Canadian appellate courts classify mistakes and the incredibly strict legal hurdles you must clear based on the nature of your appeal.</p>
+
+                <h2>The Standard of Review Matrix at a Glance</h2>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type of Error</th>
+                            <th>What It Means</th>
+                            <th>Appellate Standard</th>
+                            <th>Court's Deference to Trial Judge</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Question of Law</strong></td>
+                            <td>The judge applied the wrong legal test or misconstrued a statutory rule[cite: 11].</td>
+                            <td><strong>Correctness</strong>[cite: 11]</td>
+                            <td><strong>Zero Deference.</strong> The appellate court substitutes its own opinion[cite: 11].</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Question of Fact</strong></td>
+                            <td>The judge made a mistake about what actually happened between the parties[cite: 11].</td>
+                            <td><strong>Palpable and Overriding Error</strong>[cite: 11]</td>
+                            <td><strong>High Deference.</strong> The error must be obvious and entirely distort the outcome[cite: 11].</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mixed Fact and Law</strong></td>
+                            <td>The judge applied a legal standard to a specific set of established facts[cite: 11].</td>
+                            <td><strong>Palpable and Overriding Error</strong> (Usually)[cite: 11]</td>
+                            <td><strong>High Deference</strong>, unless a pure legal question can be cleanly separated out[cite: 11].</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>1. Questions of Law (Standard of Review: Correctness)</h2>
+                <p>A question of law arises when an appeal focuses strictly on the legal rules themselves[cite: 11]. For example, did the trial judge use the wrong definition of negligence? Did they misinterpret a section of a statute?</p>
+
+                <p>When a trial judge misstates or misapplies a pure legal rule, the standard of review is <strong>correctness</strong>[cite: 11]. This means the appellate court owes the trial judge absolutely zero deference[cite: 11]. The appeal judges are entirely free to erase the trial judge's legal reasoning and replace it with their own view of what the law should be[cite: 11].</p>
+
+                <h3>Why the Court Applies Correctness</h3>
+                <p>In <a href="https://www.canlii.org/en/ca/scc/doc/2002/2002scc33/2002scc33.html" target="_blank" rel="noopener noreferrer"><em>Housen v. Nikolaisen</em>, [2002] 2 S.C.R. 235</a>, the Supreme Court explained that the primary societal role of appellate courts is law-making, rule-refinement, and ensuring "universality"[cite: 11]. The law must mean the exact same thing across the entire province; therefore, higher courts must have wide-open powers to correct legal standards to keep the justice system uniform and predictable[cite: 11].</p>
+
+                <h2>2. Questions of Fact (Standard of Review: Palpable and Overriding Error)</h2>
+                <p>A question of fact involves the "who, what, where, and when" of the case[cite: 11]. Did the driver run a red light? Was it raining at the time of the accident? Factual conclusions also include any inferences of fact the judge draws from the evidence[cite: 11].</p>
+
+                <p>Appellate courts treat a trial judge's factual findings with immense deference[cite: 11]. Under the rule in <a href="https://www.canlii.org/en/ca/scc/doc/2002/2002scc33/2002scc33.html" target="_blank" rel="noopener noreferrer"><em>Housen v. Nikolaisen</em>, [2002] 2 S.C.R. 235</a>, a factual finding can only be reversed if the judge committed a <strong>"palpable and overriding error"</strong>[cite: 11].</p>
+
+                <p>This is an extraordinarily high legal hurdle. To win an appeal on a question of fact, you must prove two things:</p>
+                <ul>
+                    <li><strong>The Error is Palpable:</strong> The mistake must be plain to see, clear to the mind, or completely obvious[cite: 11]. It cannot be a matter of subtle interpretation; the mistake must stare the appellate court right in the face[cite: 11].</li>
+                    <li><strong>The Error is Overriding:</strong> Even if you find an obvious mistake, it is irrelevant unless it <em>overrides</em> the entire case[cite: 11]. You must prove that the mistake completely distorted the outcome or infected the ultimate verdict[cite: 11]. If the judge made a clear factual error on a minor point that didn't change the final result, the appeal will be dismissed[cite: 11].</li>
+                </ul>
+
+                <h3>Why Factual Findings are Protected</h3>
+                <p>The Supreme Court outlines three core policy reasons for this heavy deference:</p>
+                <ol>
+                    <li><strong>Resource Preservation:</strong> Trials require immense public and private resources[cite: 11]. Allowing appellate courts to constantly re-litigate facts would make appeals endlessly long, driving up the cost of justice[cite: 11].</li>
+                    <li><strong>Trial Court Integrity:</strong> The trial must remain the "main event" of the litigation process, not a mere dress rehearsal or a "tryout on the road"[cite: 11].</li>
+                    <li><strong>The Trial Judge's Advantage:</strong> The trial judge is completely immersed in the factual matrix of the case[cite: 11]. They sit through days or weeks of evidence and hear witnesses testify live (<em>viva voce</em>), giving them an incomparable advantage over appellate judges who only read a cold, dead paper transcript[cite: 11].</li>
+                </ol>
+
+                <h2>3. Questions of Mixed Fact and Law (The It-Depends Spectrum)</h2>
+                <p>A question of mixed fact and law occurs when a judge takes a legally defined standard and applies it directly to the facts of the case[cite: 11]. The classic example of this is a <strong>finding of negligence</strong>[cite: 11]. The judge must take the legal standard of "reasonable care" and decide if the specific actions of the defendant met or failed that test[cite: 11].</p>
+
+                <p>Because these questions involve an intricate blend of both law and fact, the standard of review depends on where the issue falls on the spectrum of generality[cite: 11]:</p>
+
+                <ul>
+                    <li><strong>The General Rule (Palpable and Overriding Error):</strong> If the error is deeply embedded in the specific, unique facts of the case, it is treated as a question of mixed fact and law[cite: 11]. The appellate court will apply the deferential <em>palpable and overriding error</em> standard[cite: 11]. If the trial judge interpreted the evidence as a whole reasonably, higher courts will not interfere simply because they would have weighed the facts differently[cite: 11].</li>
+                    <li><strong>The Exception (The Extricable Error of Law):</strong> If an appellate court can cleanly look at the judge's reasoning and separate out—or "extricate"—a pure legal error, the standard shifts instantly back to <strong>correctness</strong>[cite: 11]. For instance, if the trial judge left out a mandatory element of a legal test while applying it to the facts, they have effectively applied the wrong law[cite: 11]. Because they misstated the legal test itself, that specific part of the ruling is reviewed with zero deference[cite: 11].</li>
+                </ul>
+
+                <h2>The Reality of Launching an Appeal</h2>
+                <p>Understanding the standard of review is the absolute foundation of any viable appellate strategy. If your appeal relies entirely on trying to convince a panel of three Court of Appeal judges that the trial judge believed the wrong witness, you face an incredibly steep, almost insurmountable legal cliff[cite: 11].</p>
+
+                <p>To win, your appellate advocate must carefully analyze the trial judgment, separate out the pure errors of law, or systematically demonstrate that the judge's factual conclusions were completely unsupported by the evidence and directly caused an unjust verdict[cite: 11].</p>
+
+                <!-- LEGAL DISCLAIMER BLOCK -->
+                <div class="disclaimer-box">
+                    <strong>Legal Disclaimer:</strong> The structural summaries and case law analyses provided in this guide are intended strictly for general educational and informational purposes regarding civil and criminal appellate standards in Canada. It does not constitute formal legal counsel. Reading this article does not establish a lawyer-client relationship. If you are facing an adverse judgment and require immediate assistance evaluating your grounds for an appeal in Ontario, please contact TL Criminal Defence directly to schedule a formal consultation.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container contact-grid">
+            <div class="reveal">
+                <h2>Start with a free consultation.</h2>
+                <p>Being charged with a criminal offence is a life-changing event. You deserve honest communication and a rigorous defence throughout the criminal justice process.</p>
+                <p>Contact TL Criminal Defence for experienced representation against any and all kinds of criminal charges.</p>
+                <p style="color: #ea580c; font-weight: bold; font-size: 1.2rem; margin-top: 20px;">Serving clients across the GTA and all of Ontario.</p>
+                
+                <!-- URGENT CONTACT BLOCK -->
+                <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1);">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: white;">Need immediate assistance?</h3>
+                    <p style="margin-bottom: 20px; color: #cbd5e1;">For urgent bail matters or immediate legal counsel, please reach out directly.</p>
+                    <div style="display: flex; flex-direction: column; gap: 15px;">
+                        <a href="tel:6477456696" class="urgent-link" style="display: inline-flex; align-items: center; gap: 10px; font-size: 1.2rem; font-weight: bold;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 
+                            (647) 745-6696
+                        </a>
+                        <a href="mailto:trevor@tlcriminaldefence.ca" class="urgent-link" style="display: inline-flex; align-items: center; gap: 10px; font-size: 1.1rem; font-weight: bold;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> 
+                            trevor@tlcriminaldefence.ca
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-card reveal" style="transition-delay: 0.2s;">
+                <h3>Send a Confidential Message</h3>
+                
+                <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                    <input type="hidden" name="access_key" value="035536c5-aa90-41a1-ba57-459d61557321">
+                    <input type="hidden" name="subject" value="New Case Inquiry - TL Criminal Defence">
+                    <input type="hidden" name="redirect" value="https://tlcriminaldefence.ca/index.html">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <div style="margin-bottom: 15px;">
+                        <label style="font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Your Name</label>
+                        <input type="text" name="name" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; margin-top: 5px; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#1d4ed8'" onblur="this.style.borderColor='#cbd5e1'">
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label style="font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Email or Phone Number</label>
+                        <input type="text" name="contact_info" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; margin-top: 5px; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#1d4ed8'" onblur="this.style.borderColor='#cbd5e1'">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Brief Case Overview</label>
+                        <textarea name="message" rows="4" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; margin-top: 5px; font-family: inherit; resize: vertical; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#1d4ed8'" onblur="this.style.borderColor='#cbd5e1'" placeholder="Please provide general details. Do not share highly confidential specifics."></textarea>
+                    </div>
+
+                    <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_PUBLIC_KEY_HERE" style="margin-bottom: 15px;"></div>
+
+                    <button type="submit" class="btn btn-blue" style="display: block; width: 100%; text-align: center; border: none; cursor: pointer; font-size: 1rem; font-weight: bold;">SUBMIT INQUIRY</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 TL Criminal Defence. All Rights Reserved. Not legal advice until formally retained.</p>
+    </footer>
+
+    <!-- STICKY MOBILE CALL BUTTON -->
+    <a href="tel:6477456696" class="mobile-call-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+    </a>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Sticky Nav Shrink
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+            
+            // Mobile Dropdown Menu
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            
+            if(hamburger && navLinks) {
+                hamburger.addEventListener('click', () => {
+                    navLinks.classList.toggle('open');
+                });
+                
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('open');
+                    });
+                });
+            }
+
+            // Scroll Animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { 
+                threshold: 0.1 
+            });
+
+            document.querySelectorAll('.reveal').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+    <!-- Cloudflare Turnstile Anti-Spam Script -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</body>
+</html>
