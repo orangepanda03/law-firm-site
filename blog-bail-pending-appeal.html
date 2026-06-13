@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staying Out of Jail During an Appeal: Bail Pending Appeal in Ontario | TL Criminal Defence</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Staying Out of Jail During an Appeal: Bail Pending Appeal in Ontario">
+    <meta property="og:description" content="Can you get out of jail while appealing a criminal conviction? Learn how Section 679 of the Criminal Code and the Supreme Court’s Oland ruling protect you.">
+    <meta property="og:image" content="https://tlcriminaldefence.ca/hero-bg.jpg">
+    <meta property="og:url" content="https://tlcriminaldefence.ca/blog-bail-pending-appeal.html">
+    <meta property="og:type" content="article">
+
+    <style>
+        /* Base Reset & Uniform Professional Typography */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body, h1, h2, h3, a, p, span, div, li { 
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        body { line-height: 1.6; color: #1e293b; background-color: #f8fafc; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Navigation */
+        nav { background-color: #1e253c; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
+        nav.scrolled { background-color: rgba(30, 37, 60, 0.95); backdrop-filter: blur(10px); box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.2); }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 90px; padding: 0 40px; transition: height 0.3s ease; }
+        nav.scrolled .nav-inner { height: 70px; }
+        
+        .nav-brand, .nav-brand a { 
+            color: white; font-size: 1.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; 
+            font-family: "Garamond", Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+            text-decoration: none; transition: font-size 0.3s ease;
+        }
+        nav.scrolled .nav-brand, nav.scrolled .nav-brand a { font-size: 1.5rem; }
+        
+        .hamburger { display: none; background: transparent; border: none; color: white; cursor: pointer; padding: 5px; }
+        
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a { color: white; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; transition: color 0.3s; }
+        .nav-links a:hover { color: #3b82f6; }
+
+        /* Article Header */
+        .article-header { background-color: #0f172a; color: white; padding: 120px 20px 80px; text-align: center; }
+        .article-header h1 { font-size: 3rem; margin-bottom: 20px; font-family: "Garamond", Baskerville, serif; font-weight: 700; max-width: 900px; margin-left: auto; margin-right: auto; line-height: 1.2; }
+        
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: #cbd5e1; text-decoration: none; font-weight: bold; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px; transition: color 0.3s; }
+        .back-link:hover { color: #ea580c; }
+
+        /* Article Content */
+        .article-content { background-color: white; padding: 60px 0 80px; }
+        .text-block { max-width: 750px; margin: 0 auto; font-size: 1.15rem; color: #334155; }
+        .text-block h2 { color: #0f172a; font-size: 2.2rem; margin-bottom: 15px; margin-top: 50px; font-weight: 700; }
+        .text-block h3 { color: #0f172a; font-size: 1.5rem; margin-bottom: 15px; margin-top: 40px; font-weight: 700; }
+        .text-block p { margin-bottom: 25px; line-height: 1.8; }
+        .text-block ol, .text-block ul { margin-bottom: 25px; padding-left: 20px; }
+        .text-block li { margin-bottom: 15px; line-height: 1.8; }
+        .text-block strong { color: #0f172a; }
+        .text-block blockquote { background-color: #f8fafc; border-left: 4px solid #ea580c; padding: 20px; margin: 30px 0; font-style: italic; color: #1e293b; border-radius: 0 8px 8px 0; }
+        
+        /* SEO In-Text Links */
+        .text-block a { color: #1d4ed8; text-decoration: underline; font-weight: 600; transition: color 0.3s; }
+        .text-block a:hover { color: #ea580c; }
+
+        /* Blog Disclaimer Box */
+        .disclaimer-box { background-color: #f8fafc; border-left: 4px solid #64748b; padding: 25px; margin-top: 50px; font-size: 0.95rem; color: #475569; font-style: italic; line-height: 1.6; border-radius: 0 8px 8px 0; }
+
+        /* Contact Section */
+        .contact { background-color: #0f172a; color: white; padding: 80px 0; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .contact h2 { font-size: 2.5rem; margin-bottom: 20px; font-weight: 700; }
+        .contact p { color: #cbd5e1; font-size: 1.1rem; margin-bottom: 20px; }
+        .contact-card { background: white; color: #0f172a; padding: 40px; border-radius: 12px; }
+        .contact-card h3 { border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; margin-bottom: 20px; font-size: 1.5rem; font-weight: 700; }
+        .btn-blue { background-color: #1d4ed8; color: white; display: inline-block; padding: 15px 35px; border-radius: 6px; font-weight: bold; text-decoration: none; transition: all 0.3s; }
+        .btn-blue:hover { background-color: #1e40af; }
+        .urgent-link { color: white; text-decoration: none; transition: color 0.3s; }
+        .urgent-link:hover { color: #3b82f6; }
+
+        /* Footer */
+        footer { background-color: #020617; color: #64748b; text-align: center; padding: 30px 20px; font-size: 0.9rem; }
+
+        /* SCROLL ANIMATION CLASSES */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* STICKY MOBILE CALL BUTTON */
+        .mobile-call-btn { display: none; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .article-header { padding: 100px 20px 60px; }
+            .article-header h1 { font-size: 2.2rem; }
+            .contact-grid { grid-template-columns: 1fr; }
+            
+            .mobile-call-btn { 
+                display: flex; position: fixed; bottom: 20px; right: 20px; 
+                background-color: #d4af37; color: #0f172a; 
+                width: 60px; height: 60px; border-radius: 50%; 
+                align-items: center; justify-content: center;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 9999; 
+            }
+
+            /* MOBILE DROPDOWN MENU */
+            .hamburger { display: block; }
+            .nav-links { 
+                position: absolute; top: 100%; left: 0; width: 100%; 
+                background-color: rgba(30, 37, 60, 0.98); backdrop-filter: blur(10px);
+                flex-direction: column; gap: 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
+                max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
+            }
+            .nav-links.open { max-height: 350px; }
+            .nav-links a { padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-inner">
+            <div class="nav-brand"><a href="index.html">TL Criminal Defence</a></div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html#services">Services</a>
+                <a href="index.html#about">About</a>
+                <a href="successes.html">Successes</a>
+                <a href="blog.html">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="article-header">
+        <div class="container reveal active">
+            <a href="blog.html" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Legal Insights
+            </a>
+            <h1>Staying Out of Jail During an Appeal: How Bail Pending Appeal Works in Ontario</h1>
+        </div>
+    </header>
+
+    <section class="article-content">
+        <div class="container">
+            <div class="text-block reveal">
+                <p>There is no lower point in the criminal justice system than the conclusion of a sentencing hearing where a judge hands down a custodial sentence. For families watching a loved one being led away by court officers, a wave of panic sets in. The immediate, desperate question becomes: <em>Can we get them out of jail while we fight this wrongful conviction on appeal?</em></p>
+                
+                <p>The short answer is <strong>yes, it is legally possible</strong>. However, filing a notice of appeal does not automatically pause or halt a prison sentence.</p>
+
+                <p>To secure release, your appellate counsel must bring a specialized application known as a <strong>Bail Pending Appeal</strong> before a single judge of the Court of Appeal for Ontario. This complex area of law is strictly governed by <strong>Section 679(3) of the <em>Criminal Code</em></strong> and a landmark framework established by the Supreme Court of Canada[cite: 8].</p>
+
+                <p>If you are looking to challenge a conviction or sentence in Toronto or anywhere across Ontario, here is a practical guide to the legal hurdles you must clear to win your freedom while your appeal is pending.</p>
+
+                <h2>The Three Statutory Hurdles of Section 679(3)</h2>
+                <p>Unlike pre-trial bail—where the Canadian Charter guarantees a presumption of innocence and the Crown usually bears the burden to justify detention—the legal matrix completely flips after a conviction[cite: 8]. The presumption of innocence is displaced, and the burden shifts entirely to the convicted person to establish three specific criteria on a balance of probabilities[cite: 8]:</p>
+
+                <ul>
+                    <li><strong>The Appeal is Not Frivolous:</strong> The applicant must establish that the appeal has some legal substance[cite: 8]. While this is widely recognized as a very low bar, it requires showing that the grounds of appeal are legally plausible and anchored in the trial record[cite: 8].</li>
+                    <li><strong>Flight Risk / Surrender into Custody:</strong> The applicant must satisfy the judge that they have strong roots in the community, will not flee the jurisdiction, and will faithfully surrender themselves back into custody when the appeal date arrives[cite: 8].</li>
+                    <li><strong>Detention is Not Necessary in the Public Interest:</strong> This is the most fiercely litigated component of the entire application[cite: 8]. If your loved one is facing a serious sentence, this is where the bail application will be won or lost[cite: 8].</li>
+                </ul>
+
+                <h2>Demystifying the "Public Interest" standard: <em>R. v. Oland</em></h2>
+                <p>For years, appellate courts across Canada applied wildly inconsistent standards to the "public interest" branch, often automatically detaining anyone convicted of a serious or violent crime. That changed with the Supreme Court of Canada’s foundational decision in <a href="https://www.canlii.org/en/ca/scc/doc/2017/2017scc17/2017scc17.html" target="_blank" rel="noopener noreferrer"><strong><em>R. v. Oland</em> [2017] 1 S.C.R. 250</strong></a>[cite: 8].</p>
+
+                <p>The Supreme Court in <em>Oland</em> clarified that the public interest is not a standardless sweep, but rather a careful balancing act between two competing societal interests: <strong>Enforceability</strong> and <strong>Reviewability</strong>[cite: 8].</p>
+
+                <blockquote>
+                    <strong>The Public Interest Balancing Scale</strong><br><br>
+                    ⚖️ <strong>ENFORCEABILITY:</strong> The public interest in having serious criminal convictions and jail sentences immediately enforced without delay[cite: 8].<br><br>
+                    ⚖️ <strong>REVIEWABILITY:</strong> The public interest in recognizing that the justice system is not infallible and that wrongful convictions must be meaningfully reviewed[cite: 8].
+                </blockquote>
+
+                <h3>You Do Not Need a "Guaranteed Win" to Get Bail</h3>
+                <p>Before the <em>Oland</em> decision, many appeal judges refused bail on serious charges unless the defence could show a "smoking gun" that practically guaranteed the conviction would be overturned[cite: 8].</p>
+
+                <p>The Supreme Court explicitly ruled that this is an error of law[cite: 8]. An appeal judge cannot demand that your grounds of appeal "virtually assure a new trial or an acquittal"[cite: 8]. Instead, if the grounds are <strong>"clearly arguable"</strong> and surpass the frivolous threshold, the interest of <em>reviewability</em> can legally overshadow <em>enforceability</em>—even in cases as serious as murder[cite: 8]. If there are no public safety or flight concerns, detaining an ideal candidate simply because the crime was severe is unwarranted[cite: 8].</p>
+
+                <h2>Running Public Confidence: The "Reasonable Person" Test</h2>
+                <p>When evaluating whether releasing a convicted person will harm public confidence in the administration of justice, the law does not look to uninformed public outcry or reactionary media headlines[cite: 8].</p>
+
+                <p>According to <em>Oland</em>, public confidence must be viewed through the eyes of a <strong>reasonable, thoughtful, and dispassionate member of the public</strong>[cite: 8]. This fictional person is someone who is fully informed of the specific circumstances of your case, understands that appeals take time, and respects fundamental constitutional values[cite: 8].</p>
+
+                <p>If an appeal is going to take a year or more to be transcribed, briefed, and argued, a reasonable member of the public understands that forcing someone to serve a large chunk of an unconstitutional sentence before their appeal is even heard undermines the entire integrity of the legal system[cite: 8].</p>
+
+                <!-- LEGAL DISCLAIMER BLOCK -->
+                <div class="disclaimer-box">
+                    <strong>Legal Disclaimer:</strong> The information provided in this guide is structured strictly for educational and general informational purposes regarding appellate bail under the Criminal Code of Canada. It does not constitute formal legal counsel, and reading it does not establish a lawyer-client relationship. If a loved one has been convicted and you require immediate assistance filing a notice of appeal and seeking bail pending appeal in Ontario, please contact TL Criminal Defence directly to schedule a confidential consultation.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container contact-grid">
+            <div class="reveal">
+                <h2>Start with a free consultation.</h2>
+                <p>Being charged with a criminal offence is a life-changing event. You deserve honest communication and a rigorous defence throughout the criminal justice process.</p>
+                <p>Contact TL Criminal Defence for experienced representation against any and all kinds of criminal charges.</p>
+                <p style="color: #ea580c; font-weight: bold; font-size: 1.2rem; margin-top: 20px;">Serving clients across the GTA and all of Ontario.</p>
+                
+                <!-- URGENT CONTACT BLOCK -->
+                <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1);">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: white;">Need immediate assistance?</h3>
+                    <p style="margin-bottom: 20px; color: #cbd5e1;">For urgent bail matters or immediate legal counsel, please reach out directly.</p>
+                    <div style="display: flex; flex-direction: column; gap: 15px;">
+                        <a href="tel:6477456696" class="urgent-link" style="display: inline-flex; align-items: center; gap: 10px; font-size: 1.2rem; font-weight: bold;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72(12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 
+                            (647) 745-6696
+                        </a>
+                        <a href="mailto:trevor@tlcriminaldefence.ca" class="urgent-link" style="display: inline-flex; align-items: center; gap: 10px; font-size: 1.1rem; font-weight: bold;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> 
+                            trevor@tlcriminaldefence.ca
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-card reveal" style="transition-delay: 0.2s;">
+                <h3>Send a Confidential Message</h3>
+                
+                <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                    <input type="hidden" name="access_key" value="035536c5-aa90-41a1-ba57-459d61557321">
+                    <input type="hidden" name="subject" value="New Case Inquiry - TL Criminal Defence">
+                    <input type="hidden" name="redirect" value="https://tlcriminaldefence.ca/index.html">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <div style="margin-bottom: 15px;">
+                        <label style="font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Your Name</label>
+                        <input type="text" name="name" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; margin-top: 5px; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#1d4ed8'" onblur="this.style.borderColor='#cbd5e1'">
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label style="font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Email or Phone Number</label>
+                        <input type="text" name="contact_info" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; margin-top: 5px; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#1d4ed8'" onblur="this.style.borderColor='#cbd5e1'">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Brief Case Overview</label>
+                        <textarea name="message" rows="4" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; margin-top: 5px; font-family: inherit; resize: vertical; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#1d4ed8'" onblur="this.style.borderColor='#cbd5e1'" placeholder="Please provide general details. Do not share highly confidential specifics."></textarea>
+                    </div>
+
+                    <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_PUBLIC_KEY_HERE" style="margin-bottom: 15px;"></div>
+
+                    <button type="submit" class="btn btn-blue" style="display: block; width: 100%; text-align: center; border: none; cursor: pointer; font-size: 1rem; font-weight: bold;">SUBMIT INQUIRY</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 TL Criminal Defence. All Rights Reserved. Not legal advice until formally retained.</p>
+    </footer>
+
+    <!-- STICKY MOBILE CALL BUTTON -->
+    <a href="tel:6477456696" class="mobile-call-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+    </a>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Sticky Nav Shrink
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+            
+            // Mobile Dropdown Menu
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            
+            if(hamburger && navLinks) {
+                hamburger.addEventListener('click', () => {
+                    navLinks.classList.toggle('open');
+                });
+                
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('open');
+                    });
+                });
+            }
+
+            // Scroll Animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { 
+                threshold: 0.1 
+            });
+
+            document.querySelectorAll('.reveal').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+    <!-- Cloudflare Turnstile Anti-Spam Script -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</body>
+</html>
