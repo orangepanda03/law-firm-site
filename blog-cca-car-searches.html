@@ -1,0 +1,338 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smelling Smoke: The Legal Limits of a Cannabis Control Act Car Search in Ontario | TL Criminal Defence</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Smelling Smoke: The Legal Limits of a Cannabis Control Act Car Search in Ontario">
+    <meta property="og:description" content="Can police search your entire car just because they smell marijuana? Understand your Section 8, 10(a), and 10(b) Charter rights during a CCA traffic stop.">
+    <meta property="og:image" content="https://tlcriminaldefence.ca/hero-bg.jpg">
+    <meta property="og:url" content="https://tlcriminaldefence.ca/blog-cca-car-searches.html">
+    <meta property="og:type" content="article">
+
+    <style>
+        /* Base Reset & Uniform Professional Typography */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body, h1, h2, h3, a, p, span, div, li { 
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        body { line-height: 1.6; color: #1e293b; background-color: #f8fafc; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Navigation */
+        nav { background-color: #1e253c; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
+        nav.scrolled { background-color: rgba(30, 37, 60, 0.95); backdrop-filter: blur(10px); box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.2); }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 90px; padding: 0 40px; transition: height 0.3s ease; }
+        nav.scrolled .nav-inner { height: 70px; }
+        
+        .nav-brand, .nav-brand a { 
+            color: white; font-size: 1.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; 
+            font-family: "Garamond", Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+            text-decoration: none; transition: font-size 0.3s ease;
+        }
+        nav.scrolled .nav-brand, nav.scrolled .nav-brand a { font-size: 1.5rem; }
+        
+        .hamburger { display: none; background: transparent; border: none; color: white; cursor: pointer; padding: 5px; }
+        
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a { color: white; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; transition: color 0.3s; }
+        .nav-links a:hover { color: #3b82f6; }
+
+        /* Article Header */
+        .article-header { background-color: #0f172a; color: white; padding: 120px 20px 80px; text-align: center; }
+        .article-header h1 { font-size: 3rem; margin-bottom: 20px; font-family: "Garamond", Baskerville, serif; font-weight: 700; max-width: 900px; margin-left: auto; margin-right: auto; line-height: 1.2; }
+        
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: #cbd5e1; text-decoration: none; font-weight: bold; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px; transition: color 0.3s; }
+        .back-link:hover { color: #ea580c; }
+
+        /* Article Content */
+        .article-content { background-color: white; padding: 60px 0 80px; }
+        .text-block { max-width: 750px; margin: 0 auto; font-size: 1.15rem; color: #334155; }
+        .text-block h2 { color: #0f172a; font-size: 2.2rem; margin-bottom: 15px; margin-top: 50px; font-weight: 700; }
+        .text-block h3 { color: #0f172a; font-size: 1.5rem; margin-bottom: 15px; margin-top: 40px; font-weight: 700; }
+        .text-block p { margin-bottom: 25px; line-height: 1.8; }
+        .text-block ol, .text-block ul { margin-bottom: 25px; padding-left: 20px; }
+        .text-block li { margin-bottom: 15px; line-height: 1.8; }
+        .text-block strong { color: #0f172a; }
+        .text-block blockquote { background-color: #f8fafc; border-left: 4px solid #ea580c; padding: 20px; margin: 30px 0; font-style: italic; color: #1e293b; border-radius: 0 8px 8px 0; }
+        
+        /* SEO In-Text Links */
+        .text-block a { color: #1d4ed8; text-decoration: underline; font-weight: 600; transition: color 0.3s; }
+        .text-block a:hover { color: #ea580c; }
+
+        /* Blog Disclaimer Box */
+        .disclaimer-box { background-color: #f8fafc; border-left: 4px solid #64748b; padding: 25px; margin-top: 50px; font-size: 0.95rem; color: #475569; font-style: italic; line-height: 1.6; border-radius: 0 8px 8px 0; }
+
+        /* Contact Section */
+        .contact { background-color: #0f172a; color: white; padding: 80px 0; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .contact h2 { font-size: 2.5rem; margin-bottom: 20px; font-weight: 700; }
+        .contact p { color: #cbd5e1; font-size: 1.1rem; margin-bottom: 20px; }
+        .contact-card { background: white; color: #0f172a; padding: 40px; border-radius: 12px; }
+        .contact-card h3 { border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; margin-bottom: 20px; font-size: 1.5rem; font-weight: 700; }
+        .btn-blue { background-color: #1d4ed8; color: white; display: inline-block; padding: 15px 35px; border-radius: 6px; font-weight: bold; text-decoration: none; transition: all 0.3s; }
+        .btn-blue:hover { background-color: #1e40af; }
+        .urgent-link { color: white; text-decoration: none; transition: color 0.3s; }
+        .urgent-link:hover { color: #3b82f6; }
+
+        /* Footer */
+        footer { background-color: #020617; color: #64748b; text-align: center; padding: 30px 20px; font-size: 0.9rem; }
+
+        /* SCROLL ANIMATION CLASSES */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* STICKY MOBILE CALL BUTTON */
+        .mobile-call-btn { display: none; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .article-header { padding: 100px 20px 60px; }
+            .article-header h1 { font-size: 2.2rem; }
+            .contact-grid { grid-template-columns: 1fr; }
+            
+            .mobile-call-btn { 
+                display: flex; position: fixed; bottom: 20px; right: 20px; 
+                background-color: #d4af37; color: #0f172a; 
+                width: 60px; height: 60px; border-radius: 50%; 
+                align-items: center; justify-content: center;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 9999; 
+            }
+
+            /* MOBILE DROPDOWN MENU */
+            .hamburger { display: block; }
+            .nav-links { 
+                position: absolute; top: 100%; left: 0; width: 100%; 
+                background-color: rgba(30, 37, 60, 0.98); backdrop-filter: blur(10px);
+                flex-direction: column; gap: 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
+                max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
+            }
+            .nav-links.open { max-height: 350px; }
+            .nav-links a { padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-inner">
+            <div class="nav-brand"><a href="index.html">TL Criminal Defence</a></div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html#services">Services</a>
+                <a href="index.html#about">About</a>
+                <a href="successes.html">Successes</a>
+                <a href="blog.html">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="article-header">
+        <div class="container reveal active">
+            <a href="blog.html" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Legal Insights
+            </a>
+            <h1>Smelling Smoke: The Legal Limits of a Cannabis Control Act Car Search in Ontario</h1>
+        </div>
+    </header>
+
+    <section class="article-content">
+        <div class="container">
+            <div class="text-block reveal">
+                <p>It is a scenario playing out with alarming frequency across Ontario. What begins as a routine traffic stop for a minor document check or an automated licence plate flip quickly escalates the moment you roll down your window[cite: 12]. The officer claims they smell marijuana or spots a few cannabis crumbs on your centre console[cite: 12]. Within minutes, you are placed in handcuffs, and officers are tossing your vehicle from bumper to bumper—including searching deep inside your closed trunk[cite: 12, 13].</p>
+                
+                <p>Many motorists assume that the moment a police officer invokes the <em>Cannabis Control Act</em> (CCA), their constitutional rights evaporate. But under the <em>Canadian Charter of Rights and Freedoms</em>, a warrantless statutory search power is not a blank check for a general criminal inquisition[cite: 19].</p>
+
+                <p>If you find yourself detained in a parking lot or on the roadside while police use the CCA as a pretext to look for drugs or firearms, you need to understand the strict legal boundaries governing your <strong>Section 10(a) and 10(b) rights to counsel</strong>, and your <strong>Section 8 right against unreasonable search and seizure</strong>.</p>
+
+                <h2>1. Sections 10(a) & 10(b): Your Roadside Lifeline Is Not Suspended</h2>
+                <p>A common tactic among law enforcement is to keep a detainee completely in the dark about the true scope of an investigation. However, Section 10(a) of the Charter explicitly demands that everyone has the right upon detention to be informed promptly of the reasons why[cite: 12].</p>
+
+                <h3>Knowing the True "Jeopardy" of Your Detention</h3>
+                <p>The Court of Appeal for Ontario recently targeted this exact issue in the case of <strong><em>R. v. McGowan-Morris</em> [2025] O.J. No. 2048 (ONCA)</strong>[cite: 18]. The court ruled that where the police have multiple, concurrent reasons for detaining an individual, they cannot selectively choose which ones to disclose[cite: 12, 18]. To comply with Section 10(a), the police must promptly explain exactly <em>what</em> they are investigating so that you understand your true legal jeopardy[cite: 12, 18]. If they arrest you for a driving suspension but secretly intend to launch a drug search, their silence violates the Charter[cite: 12].</p>
+
+                <h3>The Myth of the "Roadside Car Search Exception"</h3>
+                <p>The Crown often argues that your Section 10(b) right to retain and instruct counsel is automatically suspended during a brief roadside stop, drawing an analogy to a quick breathalyzer screening. <em>R. v. McGowan-Morris</em> completely rejected this extension of the law[cite: 18].</p>
+
+                <p>The Court of Appeal confirmed that the temporary suspension of rights to counsel during roadside sobriety checks does <strong>not</strong> apply to a Section 12 CCA search[cite: 12, 18]. The court established a firm line:</p>
+
+                <blockquote>
+                    Once the police have reasonable grounds for a search, and form an intention to search the vehicle and its occupants, the occupants are entitled to their full rights under s. 10(b) of the Charter[cite: 12, 18].
+                </blockquote>
+
+                <p>If police form an intention to search your car under the CCA but delay advising you of your rights to counsel for 16 minutes or more while you sit in handcuffs, your rights have been violated[cite: 12]. Trial courts in cases like <em>R. v. Koralov</em> [2022] O.J. No. 5638 and <em>R. v. Patel</em> [2025] O.J. No. 1426 have recognized that police cannot delay your legal "lifeline" for the sake of convenience; if they are holding you in a cruiser, they must actively consider facilitating a private call immediately—even if it means turning off the cruiser’s audio recording system to ensure privacy[cite: 12].</p>
+
+                <h2>2. Section 8: The "Bumper-to-Bumper" Illusion</h2>
+                <p>Section 12(3) of the CCA allows a police officer who has reasonable grounds to believe cannabis is being contained in a vehicle in contravention of the Act to enter and search the vehicle without a warrant[cite: 12, 14, 15]. But what is the lawful <em>scope</em> of that search? Can an officer automatically tear open your trunk because they smelled fresh cannabis smoke in the cabin[cite: 13, 14]?</p>
+
+                <h3>Defining "Readily Available" Contraband</h3>
+                <p>The strict purpose of the CCA regulations is to promote road safety by preventing the driver or occupants from consuming cannabis while the vehicle is in motion[cite: 14, 19]. Therefore, subsection 12(2)(b) provides an explicit exception for cannabis that is packed in baggage that is fastened closed or is <strong>"not otherwise readily available"</strong> to any person in the vehicle[cite: 12, 14, 15].</p>
+
+                <p>To understand what constitutes an illegal search, we have to look at how courts define "readily available":</p>
+                <ul>
+                    <li>In <strong><em>R. v. Khan</em> [2007] O.J. No. 137 (ONSC)</strong>, the court defined "readily accessible" or available as meaning something that can be accessed <strong>quickly, without delay, and without difficulty</strong>[cite: 12, 16].</li>
+                    <li>In <strong><em>R. v. Houssein-Hassan</em> [2024] O.J. No. 2870 (ONCJ)</strong>, the court applied this directly to vehicle searches, holding that for a search to be lawful, the Crown must prove that the specific area being searched was easily and quickly accessible by an occupant, rather than fixed or closed away[cite: 12, 15].</li>
+                </ul>
+
+                <h3>Particularized Grounds vs. Blanket Pretexts</h3>
+                <p>Appellate authority in <strong><em>R. v. Leonard</em> [2025] O.J. No. 386 (ONCA)</strong> has firmly clarified that historical liquor laws do not give police a free pass to execute arbitrary, "bumper-to-bumper" searches[cite: 12, 17]. As established in <strong><em>R. v. Sappleton</em> [2021] O.J. No. 220 (ONSC)</strong> and <strong><em>R. v. Byfield</em> [2023] O.J. No. 3292 (ONSC)</strong>, a lawful search requires <strong>particularized, articulable reasonable grounds for each distinct part of the vehicle</strong> the officer intends to open[cite: 12, 14, 19].</p>
+
+                <p>If you are sitting alone in the driver's seat and police discover a few loose crumbs on the console, it is physically impossible for a bag buried under a heavy blanket in the locked trunk to be "readily available" to you[cite: 12]. Tearing open the trunk in those circumstances constitutes a flagrant overstep of statutory authority and a direct violation of your Section 8 rights[cite: 12, 19].</p>
+
+                <p>The rare exception to this rule underscores the logic: in <strong><em>R. v. Adu-Boateng</em> [2023] O.J. No. 6134 (ONSC)</strong>, a search of the trunk was deemed lawful only because the accused was sitting in the rear passenger seat and had immediate, unhindered physical access to the trunk through the vehicle’s 60/40 fold-down split seats[cite: 12, 13]. Without that direct physical nexus, the trunk remains constitutionally protected from a warrantless regulatory sweep[cite: 12, 13].</p>
+
+                <h2>3. The Appellate Counter-Attack: Challenging Convictions on Appeal</h2>
+                <p>When a trial judge misapprehends these complex constitutional rules and allows unlawfully seized guns or drugs to be admitted into evidence, the battle shifts to the Court of Appeal.</p>
+
+                <p>Challenging a conviction on appeal requires evaluating the structural standards of trial fairness and the strict rules governing evidence. As outlined by the Court of Appeal in the foundational decision of <em>R. v. Manasseri</em>, an appeal is governed strictly by the statutory "interests of justice" test under Section 683(1)(d) of the <em>Criminal Code</em>.</p>
+
+                <p>If new material or an egregious legal error arises post-trial, an appellate court will subject the record to the rigorous <strong><em>Palmer</em> test criteria</strong>, measuring:</p>
+                <ol>
+                    <li><strong>Admissibility:</strong> Whether the evidence conforms to the standard exclusionary rules of the law of evidence.</li>
+                    <li><strong>Cogency:</strong> Whether the evidence is inherently credible and sufficiently probative that, when weighed contextually against the entire trial record, it could reasonably be expected to have altered the verdict.</li>
+                    <li><strong>Due Diligence:</strong> Analyzing the justification for why the evidence was not led at trial.</li>
+                </ol>
+
+                <p>Crucially, <em>Manasseri</em> reminds us that while finality is an essential societal value, due diligence is a flexible balancing factor rather than an unyielding precondition. When a person faces a severe loss of liberty, a clear violation of well-established constitutional rules governing state conduct must be addressed unflinchingly to ensure the ultimate reliability of the verdict.</p>
+
+                <h2>Shield Your Rights with Strategic Advocacy</h2>
+                <p>If you or a loved one are facing serious drug or firearm charges stemming from an aggressive roadside vehicle search, the strategic path forward requires an exhaustive, line-by-line dissection of the police officers' notes, cruiser recordings, and timelines[cite: 12]. Weapon and drug allocations are highly technical, and a violation of your Charter rights at the roadside can completely dismantle the Crown's case at trial or on appeal[cite: 12].</p>
+
+                <!-- LEGAL DISCLAIMER BLOCK -->
+                <div class="disclaimer-box">
+                    <strong>Legal Disclaimer:</strong> The case analyses, statutory interpretations, and constitutional summaries provided in this guide are structured strictly for educational and general informational purposes under the Canadian Charter of Rights and Freedoms. It does not constitute formal legal counsel, and reading it does not establish a lawyer-client relationship. If you or your family have been subjected to an unlawful vehicle search, arbitrary detention, or a breach of your rights to counsel in Ontario, please contact TL Criminal Defence immediately to schedule a confidential legal consultation.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container contact-grid">
+            <div class="reveal">
+                <h2>Start with a free consultation.</h2>
+                <p>Being charged with a criminal offence is a life-changing event. You deserve honest communication and a rigorous defence throughout the criminal justice process.</p>
+                <p>Contact TL Criminal Defence for experienced representation against any and all kinds of criminal charges.</p>
+                <p style="color: #ea580c; font-weight: bold; font-size: 1.2rem; margin-top: 20px;">Serving clients across the GTA and all of Ontario.</p>
+                
+                <!-- URGENT CONTACT BLOCK -->
+                <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1);">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: white;">Need immediate assistance?</h3>
+                    <p style="margin-bottom: 20px; color: #cbd5e1;">For urgent bail matters or immediate legal counsel, please reach out directly.</p>
+                    <div style="display: flex; flex-direction: column; gap: 15px;">
+                        <a href="tel:6477456696" class="urgent-link" style="display: inline-flex; align-items: center; gap: 10px; font-size: 1.2rem; font-weight: bold;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 
+                            (647) 745-6696
+                        </a>
+                        <a href="mailto:trevor@tlcriminaldefence.ca" class="urgent-link" style="display: inline-flex; align-items: center; gap: 10px; font-size: 1.1rem; font-weight: bold;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> 
+                            trevor@tlcriminaldefence.ca
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-card reveal" style="transition-delay: 0.2s;">
+                <h3>Send a Confidential Message</h3>
+                
+                <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                    <input type="hidden" name="access_key" value="035536c5-aa90-41a1-ba57-459d61557321">
+                    <input type="hidden" name="subject" value="New Case Inquiry - TL Criminal Defence">
+                    <input type="hidden" name="redirect" value="https://tlcriminaldefence.ca/index.html">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <div style="margin-bottom: 15px;">
+                        <label style="font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Your Name</label>
+                        <input type="text" name="name" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; margin-top: 5px; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#1d4ed8'" onblur="this.style.borderColor='#cbd5e1'">
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label style="font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Email or Phone Number</label>
+                        <input type="text" name="contact_info" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; margin-top: 5px; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#1d4ed8'" onblur="this.style.borderColor='#cbd5e1'">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Brief Case Overview</label>
+                        <textarea name="message" rows="4" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; margin-top: 5px; font-family: inherit; resize: vertical; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#1d4ed8'" onblur="this.style.borderColor='#cbd5e1'" placeholder="Please provide general details. Do not share highly confidential specifics."></textarea>
+                    </div>
+
+                    <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_PUBLIC_KEY_HERE" style="margin-bottom: 15px;"></div>
+
+                    <button type="submit" class="btn btn-blue" style="display: block; width: 100%; text-align: center; border: none; cursor: pointer; font-size: 1rem; font-weight: bold;">SUBMIT INQUIRY</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 TL Criminal Defence. All Rights Reserved. Not legal advice until formally retained.</p>
+    </footer>
+
+    <!-- STICKY MOBILE CALL BUTTON -->
+    <a href="tel:6477456696" class="mobile-call-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+    </a>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Sticky Nav Shrink
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+            
+            // Mobile Dropdown Menu
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            
+            if(hamburger && navLinks) {
+                hamburger.addEventListener('click', () => {
+                    navLinks.classList.toggle('open');
+                });
+                
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('open');
+                    });
+                });
+            }
+
+            // Scroll Animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { 
+                threshold: 0.1 
+            });
+
+            document.querySelectorAll('.reveal').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+    <!-- Cloudflare Turnstile Anti-Spam Script -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</body>
+</html>
+
+```
