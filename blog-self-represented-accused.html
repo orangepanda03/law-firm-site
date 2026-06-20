@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appealing a Conviction: The Judge's Duty to Help Self-Represented Accused | TL Criminal Defence</title>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Appealing a Conviction: The Judge's Duty to Help Self-Represented Accused">
+    <meta property="og:description" content="Ran your own criminal trial without a lawyer and lost? Learn how a trial judge’s failure to assist a self-represented accused can ground a successful appeal in Ontario.">
+    <meta property="og:image" content="https://tlcriminaldefence.ca/hero-bg.jpg">
+    <meta property="og:url" content="https://tlcriminaldefence.ca/blog-self-represented-accused.html">
+    <meta property="og:type" content="article">
+
+    <style>
+        /* Base Reset & Uniform Professional Typography */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body, h1, h2, h3, a, p, span, div, li { 
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        body { line-height: 1.6; color: #1e293b; background-color: #f8fafc; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Navigation */
+        nav { background-color: #1e253c; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
+        nav.scrolled { background-color: rgba(30, 37, 60, 0.95); backdrop-filter: blur(10px); box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.2); }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 90px; padding: 0 40px; transition: height 0.3s ease; }
+        nav.scrolled .nav-inner { height: 70px; }
+        
+        .nav-brand, .nav-brand a { 
+            color: white; font-size: 1.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; 
+            font-family: "Garamond", Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+            text-decoration: none; transition: font-size 0.3s ease;
+        }
+        nav.scrolled .nav-brand, nav.scrolled .nav-brand a { font-size: 1.5rem; }
+        
+        .hamburger { display: none; background: transparent; border: none; color: white; cursor: pointer; padding: 5px; }
+        
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a { color: white; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; transition: color 0.3s; }
+        .nav-links a:hover { color: #3b82f6; }
+
+        /* Article Header */
+        .article-header { background-color: #0f172a; color: white; padding: 120px 20px 80px; text-align: center; }
+        .article-header h1 { font-size: 3rem; margin-bottom: 20px; font-family: "Garamond", Baskerville, serif; font-weight: 700; max-width: 900px; margin-left: auto; margin-right: auto; line-height: 1.2; }
+        
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: #cbd5e1; text-decoration: none; font-weight: bold; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px; transition: color 0.3s; }
+        .back-link:hover { color: #ea580c; }
+
+        /* Article Content */
+        .article-content { background-color: white; padding: 60px 0 80px; }
+        .text-block { max-width: 750px; margin: 0 auto; font-size: 1.15rem; color: #334155; }
+        .text-block h2 { color: #0f172a; font-size: 2.2rem; margin-bottom: 15px; margin-top: 50px; font-weight: 700; }
+        .text-block h3 { color: #0f172a; font-size: 1.5rem; margin-bottom: 15px; margin-top: 40px; font-weight: 700; }
+        .text-block p { margin-bottom: 25px; line-height: 1.8; }
+        .text-block ol, .text-block ul { margin-bottom: 25px; padding-left: 20px; }
+        .text-block li { margin-bottom: 15px; line-height: 1.8; }
+        .text-block strong { color: #0f172a; }
+        .text-block blockquote { background-color: #f8fafc; border-left: 4px solid #ea580c; padding: 20px; margin: 30px 0; font-style: italic; color: #1e293b; border-radius: 0 8px 8px 0; }
+        
+        /* ASCII Graphic Block */
+        .ascii-block { background-color: #f8fafc; padding: 20px; border-radius: 8px; border-left: 4px solid #1d4ed8; overflow-x: auto; font-family: monospace; line-height: 1.4; color: #1e293b; margin-bottom: 30px; font-size: 0.95rem; }
+        
+        /* SEO In-Text Links */
+        .text-block a { color: #1d4ed8; text-decoration: underline; font-weight: 600; transition: color 0.3s; }
+        .text-block a:hover { color: #ea580c; }
+
+        /* Blog Disclaimer Box */
+        .disclaimer-box { background-color: #f8fafc; border-left: 4px solid #64748b; padding: 25px; margin-top: 50px; font-size: 0.95rem; color: #475569; font-style: italic; line-height: 1.6; border-radius: 0 8px 8px 0; }
+
+        /* Contact Section */
+        .contact { background-color: #0f172a; color: white; padding: 80px 0; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .contact h2 { font-size: 2.5rem; margin-bottom: 20px; font-weight: 700; }
+        .contact p { color: #cbd5e1; font-size: 1.1rem; margin-bottom: 20px; }
+        .contact-card { background: white; color: #0f172a; padding: 40px; border-radius: 12px; }
+        .contact-card h3 { border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; margin-bottom: 20px; font-size: 1.5rem; font-weight: 700; }
+        .btn-blue { background-color: #1d4ed8; color: white; display: inline-block; padding: 15px 35px; border-radius: 6px; font-weight: bold; text-decoration: none; transition: all 0.3s; }
+        .btn-blue:hover { background-color: #1e40af; }
+        .urgent-link { color: white; text-decoration: none; transition: color 0.3s; }
+        .urgent-link:hover { color: #3b82f6; }
+
+        /* Footer */
+        footer { background-color: #020617; color: #64748b; text-align: center; padding: 30px 20px; font-size: 0.9rem; }
+
+        /* SCROLL ANIMATION CLASSES */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* STICKY MOBILE CALL BUTTON */
+        .mobile-call-btn { display: none; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .article-header { padding: 100px 20px 60px; }
+            .article-header h1 { font-size: 2.2rem; }
+            .contact-grid { grid-template-columns: 1fr; }
+            
+            .mobile-call-btn { 
+                display: flex; position: fixed; bottom: 20px; right: 20px; 
+                background-color: #d4af37; color: #0f172a; 
+                width: 60px; height: 60px; border-radius: 50%; 
+                align-items: center; justify-content: center;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 9999; 
+            }
+
+            /* MOBILE DROPDOWN MENU */
+            .hamburger { display: block; }
+            .nav-links { 
+                position: absolute; top: 100%; left: 0; width: 100%; 
+                background-color: rgba(30, 37, 60, 0.98); backdrop-filter: blur(10px);
+                flex-direction: column; gap: 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
+                max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
+            }
+            .nav-links.open { max-height: 350px; }
+            .nav-links a { padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-inner">
+            <div class="nav-brand"><a href="index.html">TL Criminal Defence</a></div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html#services">Services</a>
+                <a href="index.html#about">About</a>
+                <a href="successes.html">Successes</a>
+                <a href="blog.html">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="article-header">
+        <div class="container reveal active">
+            <a href="blog.html" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Legal Insights
+            </a>
+            <h1>Unrepresented and Unfair: When a Judge’s Failure to Assist a Self-Represented Accused Grounds a Criminal Appeal</h1>
+        </div>
+    </header>
+
+    <section class="article-content">
+        <div class="container">
+            <div class="text-block reveal">
+                <p>Walking into an Ontario courtroom to defend yourself against criminal charges without a lawyer is one of the most isolating and asymmetrical experiences a person can face. The state has vast resources, a professional prosecutor, and a deep understanding of the labyrinthine rules of evidence and procedure. A layperson, no matter how intelligent, is inherently at a massive disadvantage.</p>
+                
+                <p>Recognizing this raw imbalance, Canadian law dictates that a trial judge cannot simply sit back as a passive referee while an unrepresented person sinks. The court has an active, constitutional obligation to ensure the trial remains fair.</p>
+
+                <p>If you or a loved one ran a trial self-represented and were convicted, a critical question for your appellate counsel must be: <em>Did the trial judge fulfill their legal duty to assist you?</em></p>
+
+                <p>Two foundational rulings from the Court of Appeal for Ontario—<strong><em>R. v. Breton</em></strong> and <strong><em>R. v. Bancroft</em></strong>—outline exactly what a judge must do to protect an unrepresented person's rights, and precisely what it takes to turn a court’s failure into a successful ground of appeal.</p>
+
+                <h2>1. The Core Principle: Fostering a Fair Process</h2>
+                <p>The starting point for the law is clear: when an accused person is self-represented, the presiding judge carries a heavy onus to ensure they receive a fair trial.</p>
+
+                <p>As the Court of Appeal reaffirmed in <strong><em>R. v. Breton</em></strong>, it is not enough for a trial judge to point to the end result and claim that the guilty verdict appears contextually correct. What matters fundamentally is whether the <em>process</em> itself was fair for the unrepresented individual.</p>
+
+                <p>To achieve that fairness, the judge has a mandatory duty to provide active guidance and structural assistance. The court must guide the accused through the unfolding trial so that their defence can be brought out with its full force and effect.</p>
+
+                <p>While a judge cannot cross the line into acting as the person’s defence lawyer or sacrificing judicial neutrality, they must step in to prevent the unrepresented individual from falling into standard procedural traps.</p>
+
+                <h2>2. What Does the Duty to Assist Actually Require?</h2>
+                <p>The scope of a judge's duty to assist is context-dependent and circumscribed by what is reasonable under the unique circumstances of the case. However, case law establishes explicit baselines that a judge cannot ignore:</p>
+
+                <h3>Explaining the Elements of the Offence</h3>
+                <p>A self-represented defendant cannot effectively fight a charge if they do not understand what the Crown actually has to prove to find them guilty. The trial judge is legally required to ensure that the accused clearly understands the essential constituent elements of the specific offences on the indictment.</p>
+
+                <h3>Raising Charter Issues on the Court's Own Motion</h3>
+                <p>This is one of the most vital protections established by the courts. In <strong><em>R. v. Breton</em></strong>, the Court of Appeal ruled that a trial judge has an explicit obligation to raise <em>Charter</em> violations on their own motion—even if the self-represented accused fails to bring a formal pre-trial application—the moment there is clear, uncontradicted evidence in the record that a breach occurred.</p>
+
+                <p>In <em>Breton</em>, the police violated the "holding off" requirements of Section 10(b) by interrogating the accused before facilitating access to counsel. Because neither the Crown nor the judge raised the issue or alerted the unrepresented accused that this breach could legally exclude the drug evidence found in his garage, the trial was rendered fundamentally unfair.</p>
+
+                <h3>Correcting Basic Factual and Evidentiary Misunderstandings</h3>
+                <p>Laypeople frequently conflate introducing evidence with making a closing argument. In <strong><em>R. v. Bancroft</em></strong>, the unrepresented accused repeatedly stated during the trial that he would reveal inconsistencies in a key witness's testimony during his closing address, rather than confronting the witness with those statements during cross-examination.</p>
+
+                <p>The Court of Appeal noted that the trial judge committed a clear error by failing to catch this obvious misunderstanding, failing to explain the rules of impeachment, and refusing to recall the witness once the error became apparent during closing arguments.</p>
+
+                <h2>3. The Balancing Act: Efficiency vs. Timely Justice</h2>
+                <p>Trial judges today face immense pressure to keep court lists moving. Under the strict time limits dictated by the Supreme Court of Canada in <em>Jordan</em> and <em>Cody</em>, judges are expected to use their trial management powers dynamically to eliminate systemic backlogs and prevent institutional delay.</p>
+
+                <p>However, <strong><em>R. v. Breton</em></strong> provides an essential warning: a judge's desire to manage court timelines efficiently must never override their core obligation to assist an unrepresented defendant. Even if a self-represented person appears to be difficult, disorganized, or intentionally stalling, the court must balance its case-management tools with a patient commitment to fairness, <em>lest justice be denied</em>.</p>
+
+                <h2>4. How to Win an Appeal on a Failure to Assist</h2>
+                <p>If you are looking to overturn a conviction based on a judge's lack of assistance, you must clear a specific, holistic legal hurdle.</p>
+
+                <h3>It Is Not a Standalone Ground of Appeal</h3>
+                <p>A failure to assist is not an independent ground of appeal on its own. Instead, it must be framed as a systemic failure that raised the distinct probability of an unfair trial or a clear <strong>miscarriage of justice</strong> under <strong>Section 686(1)(a)(iii) of the <em>Criminal Code</em></strong>.</p>
+
+                <h3>The Materiality Test</h3>
+                <p>To win, your appellate counsel must prove that the trial judge's failure to assist was <strong>material to the outcome of the case</strong>. The Court of Appeal will perform a holistic review of the entire trial transcript to determine whether the missing assistance actually compromised the ultimate verdict.</p>
+
+<pre class="ascii-block">
+                [ THE MATERIALITY EVALUATION ]
+                               │
+       ┌───────────────────────┴───────────────────────┐
+       ▼                                               ▼
+[ APPEAL ALLOWED ]                             [ APPEAL DISMISSED ]
+The judge's failure directly                   The state's evidence was so 
+prevented the exclusion of vital               overwhelming from independent, 
+evidence or blocked a viable                   reliable sources that the error 
+defence, altering the outcome.                 did not impact the result.
+</pre>
+
+                <p>For instance, in <strong><em>R. v. Bancroft</em></strong>, even though the trial judge clearly failed to help the accused properly impeach a witness, the Court of Appeal ultimately dismissed the appeal. Why? Because the targeted witness was minor, and the trial judge's findings of guilt were rooted entirely in the overwhelming, credible, and corroborated testimony of other independent witnesses and documentary proof. The error, therefore, was not material to the outcome.</p>
+
+                <p>Conversely, if the judge's silence allowed the Crown to introduce its core, smoking-gun evidence in violation of the <em>Charter</em>—as was the case in <strong><em>Breton</em></strong>—the error is profoundly material, the conviction will be quashed, and a new trial will be ordered.</p>
+
+                <!-- LEGAL DISCLAIMER BLOCK -->
+                <div class="disclaimer-box">
+                    <strong>Legal Disclaimer:</strong> The case summaries and statutory interpretations provided in this guide are structured strictly for educational and general informational purposes regarding appellate review under the Criminal Code of Canada. It does not constitute formal legal counsel, and reading it does not establish a lawyer-client relationship. If you ran a criminal trial self-represented in Ontario and believe the court failed to assist you fairly, please contact TL Criminal Defence immediately to speak with an experienced criminal appellate advocate.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="container contact-grid">
+            <div class="reveal">
+                <h2>Start with a free consultation.</h2>
+                <p>Being charged with a criminal offence is a life-changing event. You deserve honest communication and a rigorous defence throughout the criminal justice process.</p>
+                <p>Contact TL Criminal Defence for experienced representation against any and all kinds of criminal charges.</p>
+                <p style="color: #ea580c; font-weight: bold; font-size: 1.2rem; margin-top: 20px;">Serving clients across the GTA and all of Ontario.</p>
+                
+                <!-- URGENT CONTACT BLOCK -->
+                <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1);">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: white;">Need immediate assistance?</h3>
+                    <p style="margin-bottom: 20px; color: #cbd5e1;">For urgent bail matters or immediate legal counsel, please reach out directly.</p>
+                    <div style="display: flex; flex-direction: column; gap: 15px;">
+                        <a href="tel:6477456696" class="urgent-link" style="display: inline-flex; align-items: center; gap: 10px; font-size: 1.2rem; font-weight: bold;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 
+                            (647) 745-6696
+                        </a>
+                        <a href="mailto:trevor@tlcriminaldefence.ca" class="urgent-link" style="display: inline-flex; align-items: center; gap: 10px; font-size: 1.1rem; font-weight: bold;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> 
+                            trevor@tlcriminaldefence.ca
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-card reveal" style="transition-delay: 0.2s;">
+                <h3>Send a Confidential Message</h3>
+                
+                <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                    <input type="hidden" name="access_key" value="035536c5-aa90-41a1-ba57-459d61557321">
+                    <input type="hidden" name="subject" value="New Case Inquiry - TL Criminal Defence">
+                    <input type="hidden" name="redirect" value="https://tlcriminaldefence.ca/index.html">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <div style="margin-bottom: 15px;">
+                        <label style="font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Your Name</label>
+                        <input type="text" name="name" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; margin-top: 5px; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#1d4ed8'" onblur="this.style.borderColor='#cbd5e1'">
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label style="font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Email or Phone Number</label>
+                        <input type="text" name="contact_info" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; margin-top: 5px; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#1d4ed8'" onblur="this.style.borderColor='#cbd5e1'">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Brief Case Overview</label>
+                        <textarea name="message" rows="4" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; margin-top: 5px; font-family: inherit; resize: vertical; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#1d4ed8'" onblur="this.style.borderColor='#cbd5e1'" placeholder="Please provide general details. Do not share highly confidential specifics."></textarea>
+                    </div>
+
+                    <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_PUBLIC_KEY_HERE" style="margin-bottom: 15px;"></div>
+
+                    <button type="submit" class="btn btn-blue" style="display: block; width: 100%; text-align: center; border: none; cursor: pointer; font-size: 1rem; font-weight: bold;">SUBMIT INQUIRY</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 TL Criminal Defence. All Rights Reserved. Not legal advice until formally retained.</p>
+    </footer>
+
+    <!-- STICKY MOBILE CALL BUTTON -->
+    <a href="tel:6477456696" class="mobile-call-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+    </a>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Sticky Nav Shrink
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+            
+            // Mobile Dropdown Menu
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            
+            if(hamburger && navLinks) {
+                hamburger.addEventListener('click', () => {
+                    navLinks.classList.toggle('open');
+                });
+                
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('open');
+                    });
+                });
+            }
+
+            // Scroll Animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { 
+                threshold: 0.1 
+            });
+
+            document.querySelectorAll('.reveal').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+    <!-- Cloudflare Turnstile Anti-Spam Script -->
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</body>
+</html>
