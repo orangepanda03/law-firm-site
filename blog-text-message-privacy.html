@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Message Privacy under Section 8: From Marakah to Suman | TL Criminal Defence</title>
+
+    <meta property="og:title" content="Text Message Privacy under Section 8: From Marakah to Suman">
+    <meta property="og:description" content="Can the police search your text history on someone else's phone without a warrant? Trace the massive evolution of Section 8 privacy rights from Marakah to Suman.">
+    <meta property="og:image" content="https://tlcriminaldefence.ca/hero-bg.jpg">
+    <meta property="og:url" content="https://tlcriminaldefence.ca/blog-text-message-privacy.html">
+    <meta property="og:type" content="article">
+
+    <style>
+        /* Base Reset & Uniform Professional Typography */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body, h1, h2, h3, a, p, span, div, li { 
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        body { line-height: 1.6; color: #1e293b; background-color: #f8fafc; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Navigation */
+        nav { background-color: #1e253c; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); transition: all 0.3s ease; }
+        nav.scrolled { background-color: rgba(30, 37, 60, 0.95); backdrop-filter: blur(10px); box-shadow: 0 4px 10px -1px rgba(0, 0, 0, 0.2); }
+        .nav-inner { display: flex; justify-content: space-between; align-items: center; height: 90px; padding: 0 40px; transition: height 0.3s ease; }
+        nav.scrolled .nav-inner { height: 70px; }
+        
+        .nav-brand, .nav-brand a { 
+            color: white; font-size: 1.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; 
+            font-family: "Garamond", Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+            text-decoration: none; transition: font-size 0.3s ease;
+        }
+        nav.scrolled .nav-brand, nav.scrolled .nav-brand a { font-size: 1.5rem; }
+        
+        .hamburger { display: none; background: transparent; border: none; color: white; cursor: pointer; padding: 5px; }
+        
+        .nav-links { display: flex; gap: 30px; }
+        .nav-links a { color: white; text-decoration: none; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; transition: color 0.3s; }
+        .nav-links a:hover { color: #3b82f6; }
+
+        /* Article Header */
+        .article-header { background-color: #0f172a; color: white; padding: 120px 20px 80px; text-align: center; }
+        .article-header h1 { font-size: 3rem; margin-bottom: 20px; font-family: "Garamond", Baskerville, serif; font-weight: 700; max-width: 900px; margin-left: auto; margin-right: auto; line-height: 1.2; }
+        
+        .back-link { display: inline-flex; align-items: center; gap: 8px; color: #cbd5e1; text-decoration: none; font-weight: bold; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px; transition: color 0.3s; }
+        .back-link:hover { color: #ea580c; }
+
+        /* Article Content */
+        .article-content { background-color: white; padding: 60px 0 80px; }
+        .text-block { max-width: 750px; margin: 0 auto; font-size: 1.15rem; color: #334155; }
+        .text-block h2 { color: #0f172a; font-size: 2.2rem; margin-bottom: 15px; margin-top: 50px; font-weight: 700; }
+        .text-block h3 { color: #0f172a; font-size: 1.5rem; margin-bottom: 15px; margin-top: 40px; font-weight: 700; }
+        .text-block p { margin-bottom: 25px; line-height: 1.8; }
+        .text-block ol, .text-block ul { margin-bottom: 25px; padding-left: 20px; }
+        .text-block li { margin-bottom: 15px; line-height: 1.8; }
+        .text-block strong { color: #0f172a; }
+        .text-block blockquote { background-color: #f8fafc; border-left: 4px solid #ea580c; padding: 20px; margin: 30px 0; font-style: italic; color: #1e293b; border-radius: 0 8px 8px 0; }
+        
+        /* SEO In-Text Links */
+        .text-block a { color: #1d4ed8; text-decoration: underline; font-weight: 600; transition: color 0.3s; }
+        .text-block a:hover { color: #ea580c; }
+
+        /* Blog Disclaimer Box */
+        .disclaimer-box { background-color: #f8fafc; border-left: 4px solid #64748b; padding: 25px; margin-top: 50px; font-size: 0.95rem; color: #475569; font-style: italic; line-height: 1.6; border-radius: 0 8px 8px 0; }
+
+        /* Contact Section */
+        .contact { background-color: #0f172a; color: white; padding: 80px 0; }
+        .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
+        .contact h2 { font-size: 2.5rem; margin-bottom: 20px; font-weight: 700; }
+        .contact p { color: #cbd5e1; font-size: 1.1rem; margin-bottom: 20px; }
+        .contact-card { background: white; color: #0f172a; padding: 40px; border-radius: 12px; }
+        .contact-card h3 { border-bottom: 1px solid #e2e8f0; padding-bottom: 15px; margin-bottom: 20px; font-size: 1.5rem; font-weight: 700; }
+        .btn-blue { background-color: #1d4ed8; color: white; display: inline-block; padding: 15px 35px; border-radius: 6px; font-weight: bold; text-decoration: none; transition: all 0.3s; }
+        .btn-blue:hover { background-color: #1e40af; }
+        .urgent-link { color: white; text-decoration: none; transition: color 0.3s; }
+        .urgent-link:hover { color: #3b82f6; }
+
+        /* Footer */
+        footer { background-color: #020617; color: #64748b; text-align: center; padding: 30px 20px; font-size: 0.9rem; }
+
+        /* SCROLL ANIMATION CLASSES */
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+
+        /* STICKY MOBILE CALL BUTTON */
+        .mobile-call-btn { display: none; }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .article-header { padding: 100px 20px 60px; }
+            .article-header h1 { font-size: 2.2rem; }
+            .contact-grid { grid-template-columns: 1fr; }
+            
+            .mobile-call-btn { 
+                display: flex; position: fixed; bottom: 20px; right: 20px; 
+                background-color: #d4af37; color: #0f172a; 
+                width: 60px; height: 60px; border-radius: 50%; 
+                align-items: center; justify-content: center;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 9999; 
+            }
+
+            /* MOBILE DROPDOWN MENU */
+            .hamburger { display: block; }
+            .nav-links { 
+                position: absolute; top: 100%; left: 0; width: 100%; 
+                background-color: rgba(30, 37, 60, 0.98); backdrop-filter: blur(10px);
+                flex-direction: column; gap: 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
+                max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
+            }
+            .nav-links.open { max-height: 350px; }
+            .nav-links a { padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-inner">
+            <div class="nav-brand"><a href="index.html">TL Criminal Defence</a></div>
+            
+            <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="index.html#services">Services</a>
+                <a href="index.html#about">About</a>
+                <a href="successes.html">Successes</a>
+                <a href="blog.html">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="article-header">
+        <div class="container reveal active">
+            <a href="blog.html" class="back-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                Back to Legal Insights
+            </a>
+            <h1>Hidden in the Inbox: The Massive Evolution of Text Message Privacy Under Section 8</h1>
+        </div>
+    </header>
+
+    <section class="article-content">
+        <div class="container">
+            <div class="text-block reveal">
+                <p>For years, a dangerous misconception has circulated through the public: <em>if you send an incriminating text message, and it lands on someone else’s cell phone, you completely lose your legal right to complain if the police search that phone.</em> Under <strong>Section 8 of the <em>Canadian Charter of Rights and Freedoms</em></strong>, every Canadian is protected against unreasonable search and seizure. But as our daily correspondence has shifted almost entirely to digital text mediums, the courts have been forced to grapple with a complex, tech-heavy question: <em>Does your personal "zone of privacy" protect your text history when it is stored on a device physically owned by another person?</em></p>
+                
+                <p>The short answer is: <strong>it used to, but the legal landscape has shifted dramatically.</strong> To understand how text message privacy is treated in Ontario courts today, we must trace the legal evolution across three landmark cases: the foundational ruling in <strong><em>R. v. Marakah</em></strong>, the child-welfare boundary drawn in <strong><em>R. v. P.M.</em></strong>, and the finality of the "Instrument of Crime" exception solidified in <strong><em>R. v. Suman</em></strong>.</p>
+
+                <h2>1. The Foundation: <em>R. v. Marakah</em> (2017)</h2>
+                <p>For nearly a decade, the gold standard for digital privacy in Canada was the Supreme Court’s decision in <a href="https://scc-csc.lexum.com/scc-csc/scc-csc/en/item/16915/index.do" target="_blank" rel="noopener noreferrer"><strong><em>R. v. Marakah</em>, [2017] 2 S.C.R. 608</strong></a>.</p>
+
+                <p>In <em>Marakah</em>, the appellant sent text messages to an accomplice regarding illegal firearms transactions. The police seized the accomplice’s iPhone and uncovered the incriminating messages without a valid warrant. The Crown argued that because Marakah had zero physical control over his accomplice's phone, he lacked the legal "standing" to challenge the search under Section 8.</p>
+
+                <p>The Supreme Court flatly rejected the Crown's argument, establishing several core principles that function as the legal baseline for digital data:</p>
+
+                <ul>
+                    <li><strong>The Conversation is the Subject Matter:</strong> The court ruled that the subject matter of a digital search is not the physical plastic-and-glass phone itself; it is the <strong>electronic conversation</strong> between the participants.</li>
+                    <li><strong>The Metaphorical Chat Room:</strong> The majority introduced the concept of a "metaphorical chat room"—a private electronic space created when two people text one-on-one.</li>
+                    <li><strong>The Tattletale Risk vs. State Intrusion:</strong> The court drew a clear line between the risk that a friend might voluntarily show your texts to someone (the "tattletale risk") and the risk of a warrantless, unchecked intrusion by the state. Choosing to text someone means you share control over that information, but it does <em>not</em> mean you consent to a state entity scrolling through it without a warrant.</li>
+                </ul>
+
+                <p>Under <em>Marakah</em>, senders retained a robust, legally enforceable expectation of privacy in their sent text messages, forcing police to secure specialized digital warrants before reading a recipient's inbox.</p>
+
+                <h2>2. The Parental Control Line: <em>R. v. P.M.</em> (2025)</h2>
+                <p>The absolute standard established in <em>Marakah</em> did not remain unyielding. As the courts began dealing with exploitation files, the boundaries of "objective reasonableness" were heavily scrutinized. This culminated in the Ontario Court of Appeal's ruling in <a href="https://www.canlii.org/en/on/onca/doc/2025/2025onca208/2025onca208.html" target="_blank" rel="noopener noreferrer"><strong><em>R. v. P.M.</em>, 2025 ONCA 208</strong></a>.</p>
+
+                <p>In <em>P.M.</em>, an adult uncle was prosecuted for sexual offences against his 10-year-old niece. The Crown relied heavily on text messages retrieved from the young girl's cell phones, which had been handed over to investigators voluntarily by her mother. The adult appellant claimed that under <em>Marakah</em>, he held a reasonable expectation of privacy in those text conversations.</p>
+
+                <p>The Court of Appeal rejected his claim on a highly pragmatic, normative basis:</p>
+
+                <ul>
+                    <li><strong>Parental Oversight Kills Privacy Expectations:</strong> The court noted that because the complainant was a young child, it would be contextually obvious to any adult that she could not contract for a cell phone herself.</li>
+                    <li><strong>Absolute Control:</strong> Because parents pay for, provide, and routinely monitor their children's electronic devices to safeguard them from harm, an adult has zero objectively reasonable expectation of privacy when texting a minor. No obligation of confidentiality can exist between an adult and a child victim's family space.</li>
+                </ul>
+
+                <h2>3. The Ultimate Boundary: <em>R. v. Suman</em> (2026)</h2>
+                <p>The evolution of Section 8 text privacy reached its contemporary destination with the Ontario Court of Appeal's recent decision in <strong><em>R. v. Suman</em>, 2026 ONCA 378</strong>.</p>
+
+                <p>In <em>Suman</em>, a 47-year-old man using the alias "Rico" utilized text messages to arrange transactional sex with a 17-year-old high school student. The minor's mother discovered the texts, took screenshots, and handed the phone over to the police. Crucially, the minor had initially lied to the defendant, claiming she was 18 or 19. The defence argued that because Suman subjectively believed he was texting an adult, <em>Marakah</em> shielded his digital conversation.</p>
+
+                <p>The Court of Appeal allowed the Crown's appeal and shattered Suman's privacy claim on two devastating fronts:</p>
+
+                <h3>The Commercial Exploitation Risk</h3>
+                <p>The court ruled that an adult who enters an online transactional platform designed to match older men with younger women takes an objective risk. They cannot rely on a minor's unverified representations of age to claim a constitutionally protected zone of secrecy to facilitate commercial sexual exploitation.</p>
+
+                <h3>The "Instrument of the Crime" Exception</h3>
+                <p>Most importantly, <em>Suman</em> solidified a free-standing, structural exception to the <em>Marakah</em> framework: <strong>There is absolutely no reasonable expectation of privacy in electronic communications that constitute the very means or instrument of committing a crime against the recipient</strong>.</p>
+
+                <p>When text messages are the literal mechanism used to perpetrate an offence—such as child luring, child sexual exploitation, or criminal harassment—they lose all Section 8 protection. As the court powerfully summarized, to hold otherwise would essentially conscript the victim of an offence into protecting the digital privacy of the person actively victimizing them.</p>
+
+                <h2>The Takeaway for Criminal Defence and Appellate Litigation</h2>
+                <p>The rapid trajectory from <em>Marakah</em> (2017) to <em>Suman</em> (2026) proves that digital privacy is not a fixed, static boundary. Section 8 privacy claims are an intensely context-driven, normative enterprise.</p>
+
+                <p>While a warrantless police search of a standard text conversation between two adults regarding a collateral enterprise remains a clear constitutional violation, the courts have systematically closed the door on using Section 8 as a shield when communications cross into the exploitation of minors or constitute the actual instrument of a criminal offence. Dismantling digital evidence at trial or on appeal requires a deep, forensic understanding of this shifting legal matrix.</p>
+
+                <div class="disclaimer-box">
+                    <strong>Legal Disclaimer:</strong> The case summaries, timelines, and constitutional analyses provided in this article are structured strictly for educational and general informational purposes regarding Section 8 Charter standards in Canada. It does not constitute formal legal counsel, and reading it does not establish a lawyer-client relationship. If you are facing criminal charges in Ontario involving digital or text message evidence, please contact Trevor Lau at TL Criminal Defence immediately to schedule a formal legal consultation.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container contact-grid">
+            <div class="reveal">
+                <h2>Start with a free consultation.</h2>
+                <p>Being charged with a criminal offence is a life-changing event. You deserve honest communication and a rigorous defence throughout the criminal justice process.</p>
+                <p>Contact TL Criminal Defence for experienced representation against any and all kinds of criminal charges.</p>
+                <p style="color: #ea580c; font-weight: bold; font-size: 1.2rem; margin-top: 20px;">Serving clients across the GTA and all of Ontario.</p>
+                
+                <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1);">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: white;">Need immediate assistance?</h3>
+                    <p style="margin-bottom: 20px; color: #cbd5e1;">For urgent bail matters or immediate legal counsel, please reach out directly.</p>
+                    <div style="display: flex; flex-direction: column; gap: 15px;">
+                        <a href="tel:6477456696" class="urgent-link" style="display: inline-flex; align-items: center; gap: 10px; font-size: 1.2rem; font-weight: bold;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 
+                            (647) 745-6696
+                        </a>
+                        <a href="mailto:trevor@tlcriminaldefence.ca" class="urgent-link" style="display: inline-flex; align-items: center; gap: 10px; font-size: 1.1rem; font-weight: bold;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> 
+                            trevor@tlcriminaldefence.ca
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-card reveal" style="transition-delay: 0.2s;">
+                <h3>Send a Confidential Message</h3>
+                
+                <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                    <input type="hidden" name="access_key" value="035536c5-aa90-41a1-ba57-459d61557321">
+                    <input type="hidden" name="subject" value="New Case Inquiry - TL Criminal Defence">
+                    <input type="hidden" name="redirect" value="https://tlcriminaldefence.ca/index.html">
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <div style="margin-bottom: 15px;">
+                        <label style="font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Your Name</label>
+                        <input type="text" name="name" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; margin-top: 5px; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#1d4ed8'" onblur="this.style.borderColor='#cbd5e1'">
+                    </div>
+
+                    <div style="margin-bottom: 15px;">
+                        <label style="font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Email or Phone Number</label>
+                        <input type="text" name="contact_info" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; margin-top: 5px; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#1d4ed8'" onblur="this.style.borderColor='#cbd5e1'">
+                    </div>
+
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-size: 0.8rem; color: #64748b; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">Brief Case Overview</label>
+                        <textarea name="message" rows="4" required style="width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; margin-top: 5px; font-family: inherit; resize: vertical; outline: none; transition: border-color 0.3s;" onfocus="this.style.borderColor='#1d4ed8'" onblur="this.style.borderColor='#cbd5e1'" placeholder="Please provide general details. Do not share highly confidential specifics."></textarea>
+                    </div>
+
+                    <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_PUBLIC_KEY_HERE" style="margin-bottom: 15px;"></div>
+
+                    <button type="submit" class="btn btn-blue" style="display: block; width: 100%; text-align: center; border: none; cursor: pointer; font-size: 1rem; font-weight: bold;">SUBMIT INQUIRY</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 TL Criminal Defence. All Rights Reserved. Not legal advice until formally retained.</p>
+    </footer>
+
+    <a href="tel:6477456696" class="mobile-call-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+    </a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Sticky Nav Shrink
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+            
+            // Mobile Dropdown Menu
+            const hamburger = document.getElementById('hamburger');
+            const navLinks = document.getElementById('nav-links');
+            
+            if(hamburger && navLinks) {
+                hamburger.addEventListener('click', () => {
+                    navLinks.classList.toggle('open');
+                });
+                
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('open');
+                    });
+                });
+            }
+
+            // Scroll Animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { 
+                threshold: 0.1 
+            });
+
+            document.querySelectorAll('.reveal').forEach((el) => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+</body>
+</html>
