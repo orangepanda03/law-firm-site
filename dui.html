@@ -8,7 +8,7 @@
     <meta property="og:title" content="TL Criminal Defence | Toronto Criminal Lawyer">
     <meta property="og:description" content="Oxford-trained and court-tested. Trevor Lau defends clients across Ontario against all criminal charges. Contact for a free consultation.">
     <meta property="og:image" content="https://tlcriminaldefence.ca/hero-bg.jpg">
-    <meta property="og:url" content="https://tlcriminaldefence.ca/">
+    <meta property="og:url" content="https://tlcriminaldefence.ca/dui.html">
     <meta property="og:type" content="website">
     
     <style>
@@ -33,7 +33,18 @@
         .service-content h1 { font-size: 3rem; margin-bottom: 25px; font-weight: 700; color: #0f172a; font-family: "Garamond", Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif; }
         .service-content p { font-size: 1.15rem; color: #475569; margin-bottom: 20px; }
         .disclaimer { font-size: 0.9rem; color: #64748b; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e8f0; font-style: italic; }
-        
+
+        /* FAQ Accordion Styles */
+        .faq-section { margin-top: 60px; padding-top: 40px; border-top: 2px solid #f1f5f9; }
+        .faq-section h2 { font-size: 2.2rem; margin-bottom: 30px; color: #0f172a; font-weight: 700; }
+        .faq-item { border-bottom: 1px solid #e2e8f0; margin-bottom: 10px; }
+        .faq-question { width: 100%; text-align: left; background: none; border: none; padding: 20px 0; font-size: 1.2rem; font-weight: 700; color: #0f172a; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-question:hover { color: #1d4ed8; }
+        .faq-icon { font-size: 1.5rem; font-weight: 300; color: #64748b; transition: transform 0.3s ease; }
+        .faq-item.active .faq-icon { transform: rotate(45deg); color: #1d4ed8; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease; padding: 0; opacity: 0; }
+        .faq-item.active .faq-answer { padding-bottom: 20px; opacity: 1; max-height: 800px; }
+
         /* Contact Section */
         .contact { background-color: #0f172a; color: white; padding: 80px 0; }
         .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
@@ -64,10 +75,8 @@
             .nav-links { 
                 position: absolute; top: 100%; left: 0; width: 100%; 
                 background-color: rgba(30, 37, 60, 0.98); backdrop-filter: blur(10px);
-                flex-direction: column; gap: 0;
-                box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
-                max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
-            }
+                flex-direction: column; gap: 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
+                max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
             .nav-links.open { max-height: 350px; }
             .nav-links a { padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.05); }
             .service-content h1 { font-size: 2.2rem; }
@@ -75,6 +84,57 @@
             .mobile-call-btn { display: flex; position: fixed; bottom: 20px; right: 20px; background-color: #d4af37; color: #0f172a; width: 60px; height: 60px; border-radius: 50%; align-items: center; justify-content: center; box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 9999; }
         }
     </style>
+
+    <!-- FAQ Schema for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is the difference between an Impaired Driving charge and an "Over 80" charge?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "They are two separate criminal offences often charged together. Impaired driving focuses entirely on your behavior and ability to operate a vehicle due to alcohol or drugs. An "Over 80" charge is strictly mathematical; it means your blood alcohol concentration (BAC) exceeded 80 milligrams per 100 milliliters of blood, as measured by an evidentiary breathalyzer."
+        }
+      },{
+        "@type": "Question",
+        "name": "Do I have to blow into a roadside breathalyzer if Ontario police ask me to?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Under mandatory alcohol screening laws, police can demand a roadside breath sample from any lawfully stopped driver without needing prior suspicion of drinking. If you refuse, you will be hit with a Refusal to Comply charge, which carries the exact same criminal record, mandatory minimum fines, and driving prohibitions as a DUI conviction."
+        }
+      },{
+        "@type": "Question",
+        "name": "What happens to my driver's licence immediately after a DUI arrest in Ontario?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You face an automatic, immediate 90-day Administrative Driver’s Licence Suspension (ADLS), and your vehicle will be impounded for 7 days. This penalty is triggered instantly by the Ministry of Transportation at the roadside or police station before you are ever convicted of a crime, and it cannot be appealed or paused."
+        }
+      },{
+        "@type": "Question",
+        "name": "Can my DUI charge be dropped if the police did not let me call a lawyer before the roadside breath test?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, not for the roadside test. The law permits police to temporarily suspend your Charter right to counsel to perform an immediate roadside screening test. However, the moment you are arrested or taken to the station for the main breathalyzer, your right to speak to a lawyer becomes fully active. Any police delay at that stage can violate your rights and get your breath readings thrown out."
+        }
+      },{
+        "@type": "Question",
+        "name": "What are some defences in DUI cases?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "DUI defences are highly technical and heavily rely on constitutional safeguards and procedural precision. Common trial strategies include: Right to Counsel Violations (Section 10(b))—proving the police intentionally or systematically delayed your access to a lawyer at the police station. Unreasonable Search and Seizure (Section 8)—challenging the legality of the initial traffic stop. Improper Maintenance/Calibration—cross-examining the qualified technician to expose analytical gaps on the Intoxilyzer instrument. Lack of 'Care or Control'—demonstrating that you had no active intention to set the vehicle in motion."
+        }
+      },{
+        "@type": "Question",
+        "name": "What are the mandatory penalties for a first-time DUI conviction in Ontario?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A first-offence conviction carries a mandatory minimum $1,000 fine, a 1-year criminal driving prohibition, an ignition interlock requirement, and a permanent criminal record. Additionally, you must complete Ontario's intensive "Back on Track" education and rehabilitation program at your own expense before your licence can be reinstated."
+        }
+      }]
+    }
+    </script>
 </head>
 <body>
 
@@ -114,6 +174,60 @@
 
             <h2 style="font-size: 1.8rem; margin-top: 40px; margin-bottom: 15px; color: #1e40af; font-weight: 700; font-family: 'Garamond', Baskerville, serif;">Act Quickly</h2>
             <p>Following a DUI charge, your license is immediately suspended for 90 days, and your vehicle may be impounded. The decisions you make early on are critical. Contact TL Criminal Defence immediately for a free consultation to review the evidence and begin building your defence.</p>
+            
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h2>Commonly Asked Questions: DUI & Impaired Driving Defence</h2>
+                
+                <div class="faq-item">
+                    <button class="faq-question">What is the difference between an Impaired Driving charge and an "Over 80" charge? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>They are two separate criminal offences often charged together. Impaired driving focuses entirely on your behavior and ability to operate a vehicle due to alcohol or drugs. An "Over 80" charge is strictly mathematical; it means your blood alcohol concentration (BAC) exceeded 80 milligrams per 100 milliliters of blood, as measured by an evidentiary breathalyzer.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Do I have to blow into a roadside breathalyzer if Ontario police ask me to? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Yes. Under mandatory alcohol screening laws, police can demand a roadside breath sample from any lawfully stopped driver without needing prior suspicion of drinking. If you refuse, you will be hit with a <strong>Refusal to Comply</strong> charge, which carries the exact same criminal record, mandatory minimum fines, and driving prohibitions as a DUI conviction.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">What happens to my driver's licence immediately after a DUI arrest in Ontario? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>You face an automatic, immediate <strong>90-day Administrative Driver’s Licence Suspension (ADLS)</strong>, and your vehicle will be impounded for 7 days. This penalty is triggered instantly by the Ministry of Transportation at the roadside or police station before you are ever convicted of a crime, and it cannot be appealed or paused.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Can my DUI charge be dropped if the police did not let me call a lawyer before the roadside breath test? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>No, not for the roadside test. The law permits police to temporarily suspend your <em>Charter</em> right to counsel to perform an immediate roadside screening test. However, the moment you are arrested or taken to the station for the main breathalyzer, your right to speak to a lawyer becomes fully active. Any police delay at that stage can violate your rights and get your breath readings thrown out.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">What are some defences in DUI cases? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>DUI defences are highly technical and heavily rely on constitutional safeguards and procedural precision. Common trial strategies include:</p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li><strong>Right to Counsel Violations (Section 10(b)):</strong> Proving the police intentionally or systematically delayed your access to a lawyer at the police station, rendering the breath samples inadmissible.</li>
+                            <li><strong>Unreasonable Search and Seizure (Section 8):</strong> Challenging the legality of the initial traffic stop or proving the police lacked the statutory grounds to demand breath samples.</li>
+                            <li><strong>Improper Maintenance / Calibration:</strong> Cross-examining the qualified technician to expose analytical gaps, improper temperature logs, or expired calibration checks on the Intoxilyzer instrument.</li>
+                            <li><strong>Lack of "Care or Control":</strong> If you were found in a parked vehicle, demonstrating that you had no active intention to set the vehicle in motion (e.g., sleeping it off safely in the backseat without keys in the ignition).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">What are the mandatory penalties for a first-time DUI conviction in Ontario? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>A first-offence conviction carries a mandatory minimum <strong>$1,000 fine</strong>, a <strong>1-year criminal driving prohibition</strong>, an ignition interlock requirement, and a permanent criminal record. Additionally, you must complete Ontario's intensive "Back on Track" education and rehabilitation program at your own expense before your licence can be reinstated.</p>
+                    </div>
+                </div>
+            </div>
+
             <p class="disclaimer">None of the information contained on this website is legal advice, and is meant for educational purposes only. If you have been charged with a criminal offence, only the lawyer you retain can provide you with legal advice specific to your case.</p>
         </div>
     </section>
@@ -168,7 +282,7 @@
 
                     <div class="cf-turnstile" data-sitekey="YOUR_TURNSTILE_PUBLIC_KEY_HERE" style="margin-bottom: 15px;"></div>
 
-                    <button type="submit" class="btn btn-blue" style="display: block; width: 100%; text-align: center; border: none; cursor: pointer; font-size: 1rem; font-weight: bold;">SUBMIT INQUIRY</button>
+                    <button type="submit" class="btn btn-blue" style="display: block; width: 100%; text-align: center; border: none; cursor: pointer; font-size: 1rem; font-weight: bold;">SUBMIT INQUquiry</button>
                 </form>
             </div>
         </div>
@@ -184,6 +298,16 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            // STICKY HEADER ENHANCEMENT
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+
             // HAMBURGER MENU DROPDOWN
             const hamburger = document.getElementById('hamburger');
             const navLinks = document.getElementById('nav-links');
@@ -192,10 +316,47 @@
                 hamburger.addEventListener('click', () => {
                     navLinks.classList.toggle('open');
                 });
+                // Closes menu when a link is clicked
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('open');
+                    });
+                });
             }
+
+            // FAQ ACCORDION LOGIC
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close all other open items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+
+            // SCROLL ANIMATION CLASSES
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { 
+                threshold: 0.1 
+            });
+
+            document.querySelectorAll('.reveal').forEach((el) => {
+                observer.observe(el);
+            });
         });
     </script>
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-</body>
 </body>
 </html>
