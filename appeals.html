@@ -8,7 +8,7 @@
     <meta property="og:title" content="Appeals | TL Criminal Defence">
     <meta property="og:description" content="Oxford-trained and court-tested. Trevor Lau defends clients across Ontario against all criminal charges. Contact for a free consultation.">
     <meta property="og:image" content="https://tlcriminaldefence.ca/hero-bg.jpg">
-    <meta property="og:url" content="https://tlcriminaldefence.ca/">
+    <meta property="og:url" content="https://tlcriminaldefence.ca/appeals.html">
     <meta property="og:type" content="website">
 
     <style>
@@ -31,6 +31,17 @@
         .service-content p { font-size: 1.15rem; color: #475569; margin-bottom: 20px; }
         .disclaimer { font-size: 0.9rem; color: #64748b; margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e8f0; font-style: italic; }
         
+        /* FAQ Accordion Styles */
+        .faq-section { margin-top: 60px; padding-top: 40px; border-top: 2px solid #f1f5f9; }
+        .faq-section h2 { font-size: 2.2rem; margin-bottom: 30px; color: #0f172a; font-weight: 700; }
+        .faq-item { border-bottom: 1px solid #e2e8f0; margin-bottom: 10px; }
+        .faq-question { width: 100%; text-align: left; background: none; border: none; padding: 20px 0; font-size: 1.2rem; font-weight: 700; color: #0f172a; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-question:hover { color: #1d4ed8; }
+        .faq-icon { font-size: 1.5rem; font-weight: 300; color: #64748b; transition: transform 0.3s ease; }
+        .faq-item.active .faq-icon { transform: rotate(45deg); color: #1d4ed8; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease; padding: 0; opacity: 0; }
+        .faq-item.active .faq-answer { padding-bottom: 20px; opacity: 1; max-height: 800px; }
+
         .contact { background-color: #0f172a; color: white; padding: 80px 0; }
         .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
         .contact h2 { font-size: 2.5rem; margin-bottom: 20px; font-weight: 700; }
@@ -59,10 +70,8 @@
             .nav-links { 
                 position: absolute; top: 100%; left: 0; width: 100%; 
                 background-color: rgba(30, 37, 60, 0.98); backdrop-filter: blur(10px);
-                flex-direction: column; gap: 0;
-                box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
-                max-height: 0; overflow: hidden; transition: max-height 0.3s ease;
-            }
+                flex-direction: column; gap: 0; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
+                max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
             .nav-links.open { max-height: 350px; }
             .nav-links a { padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.05); }
             .service-content h1 { font-size: 2.2rem; }
@@ -72,11 +81,104 @@
                 display: flex; position: fixed; bottom: 20px; right: 20px; 
                 background-color: #d4af37; color: #0f172a; 
                 width: 60px; height: 60px; border-radius: 50%; 
-                align-items: center; justify-content: center; 
+                align-items: center; justify-content: center;
                 box-shadow: 0 4px 15px rgba(0,0,0,0.3); z-index: 9999; 
             }
         }
     </style>
+
+    <!-- FAQ Schema for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is the difference between a summary conviction appeal and an indictable appeal in Ontario?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The difference depends entirely on how the Crown chose to prosecute the original charge. Summary conviction appeals involve less serious offences and are heard by a single judge in the Superior Court of Justice. Indictable appeals involve serious charges and are argued before a three-judge panel at the Court of Appeal for Ontario."
+        }
+      },{
+        "@type": "Question",
+        "name": "How long do I have to file a criminal appeal in Ontario?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You have strictly 30 days from the date of your sentencing to file a formal Notice of Appeal. If you miss this critical statutory deadline, you cannot automatically appeal; your lawyer must bring a separate, complex application to request an extension of time from the court."
+        }
+      },{
+        "@type": "Question",
+        "name": "Can I be released from jail while my appeal is being decided?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You can remain out of custody by successfully applying for Bail Pending Appeal under Section 679 of the Criminal Code. A judge may grant your release if your appeal has real legal merit (is not frivolous), you are not a flight risk, and your detention is not necessary in the public interest."
+        }
+      },{
+        "@type": "Question",
+        "name": "What happens if a trial judge takes too long to deliver their written reasons?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An inordinate post-verdict delay can ground a successful appeal under the Teskey framework. If the judge's delay creates a reasonable apprehension that they engaged in "result-driven reasoning"—essentially backward-engineering their logic after the fact to justify a conviction—the appellate court may set aside the finding of guilt."
+        }
+      },{
+        "@type": "Question",
+        "name": "Does an appellate court rehear my entire trial or listen to new witnesses?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. An appeal is not a re-trial or a second chance to tell your story. The appellate court does not hear live witness testimony or re-evaluate basic credibility. Instead, the judges review the written trial transcripts to determine if the trial judge made a material error in law or a palpable factual mistake."
+        }
+      },{
+        "@type": "Question",
+        "name": "What is the step-by-step criminal appeal process in Ontario from filing to decision?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The path of a criminal appeal follows a strict, highly regulated sequence: 1. Filing the Notice of Appeal: Your lawyer drafts and serves the Crown with the formal Notice within 30 days of sentence, locking in your intent to appeal. 2. Securing Bail Pending Appeal: If sentenced to jail, a separate release application is immediately argued so you can fight your case from home. 3. Ordering Transcripts: Every word spoken during your trial is compiled into certified typed transcripts. 4. Perfection of the Appeal: Your lawyer files the complete trial record, an Appeal Book, and a written argument called a Factum outlining the trial errors. 5. The Oral Hearing: Lawyers present live arguments and answer intensive questioning before the appellate judge(s). 6. The Decision: The court issues a formal judgment either dismissing the appeal, ordering a new trial, or entering a total acquittal."
+        }
+      },{
+        "@type": "Question",
+        "name": "Can I appeal a guilty plea?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, but it is an exceptionally high legal hurdle. When you enter a guilty plea, you formally waive your right to a trial. To successfully appeal it, your lawyer must prove the plea was legally invalid—meaning it was not voluntary, you did not understand the nature and consequences of the charges, or you lacked informed instruction due to systemic failures."
+        }
+      },{
+        "@type": "Question",
+        "name": "What if the appeal fails?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If your appeal is dismissed, the lower court’s conviction and sentence remain fully in force. If you were out of custody on a Bail Pending Appeal order, that order terminates automatically, and you must immediately surrender yourself to the designated correctional facility to serve the remainder of your sentence."
+        }
+      },{
+        "@type": "Question",
+        "name": "Can I appeal again if my initial appeal is dismissed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, you can potentially appeal to the next level of court. If your summary conviction appeal was dismissed by the Superior Court of Justice, your lawyer can apply for "leave" (permission) to appeal to the Court of Appeal for Ontario. If you lose at the Court of Appeal, your absolute final legal option is to apply for leave to appeal to the Supreme Court of Canada."
+        }
+      },{
+        "@type": "Question",
+        "name": "Can I introduce new evidence on appeal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ordinarily, appeals are restricted strictly to the evidence heard at trial. However, you can introduce new evidence by filing a formal application for Fresh Evidence under the binding Palmer test. The court will only accept it if the evidence is highly credible, relevant, could not have been discovered before trial with reasonable diligence, and could realistically have changed the verdict."
+        }
+      },{
+        "@type": "Question",
+        "name": "How do I appeal a sentence?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You launch an appeal against a sentence by proving that the trial judge imposed a penalty that is demonstrably unfit or made an error in principle. This includes showing that the judge misapplied statutory guidelines, failed to consider mandatory mitigating factors, or overemphasized a specific aggravating element to create an unconscionable sentence."
+        }
+      },{
+        "@type": "Question",
+        "name": "What happens if I win the appeal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Winning an appeal results in one of three primary judicial remedies: A New Trial is Ordered: The appellate court strikes down the original conviction due to a material error but determines a trial must be re-run to achieve justice. An Acquittal is Entered: The court completely overturns the conviction and determines the case cannot legally stand. You walk away with no criminal record and no further trials. The Sentence is Altered: In a sentence-only appeal, the court reduces your jail time or modifies your probation conditions, allowing you to complete your penalty sooner."
+        }
+      }]
+    }
+    </script>
 </head>
 <body>
 
@@ -116,6 +218,109 @@
 
             <h2 style="font-size: 1.8rem; margin-top: 40px; margin-bottom: 15px; color: #1e40af; font-weight: 700; font-family: 'Garamond', Baskerville, serif;">Time is of the Essence</h2>
             <p>In Ontario, there are strict deadlines to file a Notice of Appeal—typically <strong>30 days</strong> from the date of your sentencing. Do not delay in seeking legal counsel. Contact TL Criminal Defence immediately to review your case and assess the viability of your appeal.</p>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h2>Commonly Asked Questions: Criminal Appeals</h2>
+                
+                <div class="faq-item">
+                    <button class="faq-question">What is the difference between a summary conviction appeal and an indictable appeal in Ontario? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>The difference depends entirely on how the Crown chose to prosecute the original charge. Summary conviction appeals involve less serious offences and are heard by a single judge in the Superior Court of Justice. Indictable appeals involve serious charges and are argued before a three-judge panel at the Court of Appeal for Ontario.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">How long do I have to file a criminal appeal in Ontario? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>You have strictly <strong>30 days</strong> from the date of your sentencing to file a formal Notice of Appeal. If you miss this critical statutory deadline, you cannot automatically appeal; your lawyer must bring a separate, complex application to request an extension of time from the court.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Can I be released from jail while my appeal is being decided? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Yes. You can remain out of custody by successfully applying for <strong>Bail Pending Appeal</strong> under Section 679 of the <em>Criminal Code</em>. A judge may grant your release if your appeal has real legal merit (is not frivolous), you are not a flight risk, and your detention is not necessary in the public interest.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">What happens if a trial judge takes too long to deliver their written reasons? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>An inordinate post-verdict delay can ground a successful appeal under the <strong>Teskey framework</strong>. If the judge's delay creates a reasonable apprehension that they engaged in "result-driven reasoning"—essentially backward-engineering their logic after the fact to justify a conviction—the appellate court may set aside the finding of guilt.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Does an appellate court rehear my entire trial or listen to new witnesses? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>No. An appeal is not a re-trial or a second chance to tell your story. The appellate court does not hear live witness testimony or re-evaluate basic credibility. Instead, the judges review the written trial transcripts to determine if the trial judge made a material error in law or a palpable factual mistake.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">What is the step-by-step criminal appeal process in Ontario from filing to decision? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>The path of a criminal appeal follows a strict, highly regulated sequence:</p>
+                        <ol style="margin-left: 20px; margin-top: 10px;">
+                            <li><strong>Filing the Notice of Appeal:</strong> Your lawyer drafts and serves the Crown with the formal Notice within 30 days of sentence, locking in your intent to appeal.</li>
+                            <li><strong>Securing Bail Pending Appeal:</strong> If sentenced to jail, a separate release application is immediately argued so you can fight your case from home.</li>
+                            <li><strong>Ordering Transcripts:</strong> Every word spoken during your trial is compiled into certified typed transcripts.</li>
+                            <li><strong>Perfection of the Appeal:</strong> Your lawyer files the complete trial record, an Appeal Book, and a written argument called a Factum outlining the trial errors.</li>
+                            <li><strong>The Oral Hearing:</strong> Lawyers present live arguments and answer intensive questioning before the appellate judge(s).</li>
+                            <li><strong>The Decision:</strong> The court issues a formal judgment either dismissing the appeal, ordering a new trial, or entering a total acquittal.</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Can I appeal a guilty plea? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Yes, but it is an exceptionally high legal hurdle. When you enter a guilty plea, you formally waive your right to a trial. To successfully appeal it, your lawyer must prove the plea was legally invalid—meaning it was not voluntary, you did not understand the nature and consequences of the charges, or you lacked informed instruction due to systemic failures.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">What if the appeal fails? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>If your appeal is dismissed, the lower court’s conviction and sentence remain fully in force. If you were out of custody on a Bail Pending Appeal order, that order terminates automatically, and you must immediately surrender yourself to the designated correctional facility to serve the remainder of your sentence.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Can I appeal again if my initial appeal is dismissed? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Yes, you can potentially appeal to the next level of court. If your summary conviction appeal was dismissed by the Superior Court of Justice, your lawyer can apply for "leave" (permission) to appeal to the Court of Appeal for Ontario. If you lose at the Court of Appeal, your absolute final legal option is to apply for leave to appeal to the Supreme Court of Canada.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">Can I introduce new evidence on appeal? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Ordinarily, appeals are restricted strictly to the evidence heard at trial. However, you can introduce new evidence by filing a formal application for <strong>Fresh Evidence</strong> under the binding <em>Palmer</em> test. The court will only accept it if the evidence is highly credible, relevant, could not have been discovered before trial with reasonable diligence, and could realistically have changed the verdict.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">How do I appeal a sentence? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>You launch an appeal against a sentence by proving that the trial judge imposed a penalty that is <strong>demonstrably unfit</strong> or made an error in principle. This includes showing that the judge misapplied statutory guidelines, failed to consider mandatory mitigating factors, or overemphasized a specific aggravating element to create an unconscionable sentence.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">What happens if I win the appeal? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Winning an appeal results in one of three primary judicial remedies:</p>
+                        <ul style="margin-left: 20px; margin-top: 10px;">
+                            <li><strong>A New Trial is Ordered:</strong> The appellate court strikes down the original conviction due to a material error but determines a trial must be re-run to achieve justice.</li>
+                            <li><strong>An Acquittal is Entered:</strong> The court completely overturns the conviction and determines the case cannot legally stand. You walk away with no criminal record and no further trials.</li>
+                            <li><strong>The Sentence is Altered:</strong> In a sentence-only appeal, the court reduces your jail time or modifies your probation conditions, allowing you to complete your penalty sooner.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
             <p class="disclaimer">None of the information contained on this website is legal advice, and is meant for educational purposes only. If you have been charged with a criminal offence, only the lawyer you retain can provide you with legal advice specific to your case.</p>
         </div>
     </section>
@@ -186,6 +391,16 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
+            // STICKY HEADER ENHANCEMENT
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+
             // HAMBURGER MENU DROPDOWN
             const hamburger = document.getElementById('hamburger');
             const navLinks = document.getElementById('nav-links');
@@ -194,10 +409,47 @@
                 hamburger.addEventListener('click', () => {
                     navLinks.classList.toggle('open');
                 });
+                // Closes menu when a link is clicked
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        navLinks.classList.remove('open');
+                    });
+                });
             }
+
+            // FAQ ACCORDION LOGIC
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close all other open items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+
+            // SCROLL ANIMATION CLASSES
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { 
+                threshold: 0.1 
+            });
+
+            document.querySelectorAll('.reveal').forEach((el) => {
+                observer.observe(el);
+            });
         });
     </script>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-</body>
 </body>
 </html>
