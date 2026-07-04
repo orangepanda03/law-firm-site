@@ -56,6 +56,16 @@
         .text-block li { margin-bottom: 10px; line-height: 1.8; }
         .text-block strong { color: #0f172a; }
 
+        /* FAQ Accordion Styles */
+        .faq-section { margin-top: 60px; padding-top: 40px; border-top: 2px solid #f1f5f9; }
+        .faq-item { border-bottom: 1px solid #e2e8f0; margin-bottom: 10px; }
+        .faq-question { width: 100%; text-align: left; background: none; border: none; padding: 20px 0; font-size: 1.2rem; font-weight: 700; color: #0f172a; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .faq-question:hover { color: #1d4ed8; }
+        .faq-icon { font-size: 1.5rem; font-weight: 300; color: #64748b; transition: transform 0.3s ease; }
+        .faq-item.active .faq-icon { transform: rotate(45deg); color: #1d4ed8; }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease; padding: 0; opacity: 0; }
+        .faq-item.active .faq-answer { padding-bottom: 20px; opacity: 1; max-height: 500px; }
+
         /* Contact Section */
         .contact { background-color: #0f172a; color: white; padding: 80px 0; }
         .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: center; }
@@ -108,6 +118,50 @@
             .nav-links a { padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.05); }
         }
     </style>
+    
+    <!-- FAQ Schema for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is the difference between a bail hearing and a Bail Review in Ontario?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A bail hearing is your primary appearance before a Justice of the Peace to secure release immediately after an arrest. A Bail Review is a formal, complex appeal brought before a Superior Court Judge if you were wrongly detained or if your conditions are unconstitutionally strict and require a material change in circumstances."
+        }
+      },{
+        "@type": "Question",
+        "name": "What happens if I am denied bail at my first court appearance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you are denied bail at your initial show-cause hearing, you will be remanded into custody at a provincial detention centre. Your only legal remedy to secure release prior to trial is to have a lawyer file a formal application for a Bail Review in the Superior Court of Justice."
+        }
+      },{
+        "@type": "Question",
+        "name": "What are the legal and financial risks of acting as a surety in Ontario?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A surety pledges a specific amount of money to the court as a guarantee that the accused will follow their release conditions. You do not pay this money upfront, but if the accused breaches their conditions or flees, the Crown can seize your pledged assets through estreatment proceedings."
+        }
+      },{
+        "@type": "Question",
+        "name": "How long can the police legally hold me in custody before a bail hearing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Under Section 503 of the Criminal Code, police must bring an arrested person before a justice without unreasonable delay, and strictly within a 24-hour window if a justice is available. Holding a suspect past 24 hours purely for investigative convenience can constitute a serious constitutional violation."
+        }
+      },{
+        "@type": "Question",
+        "name": "Can my bail conditions be changed without launching a full court appeal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. If the Crown prosecutor consents to the modifications, your defence lawyer can execute an administrative process called a Bail Variation. This allows you to alter highly restrictive terms—such as changing a residence, adjusting a curfew, or swapping a surety—without running a contested Bail Review in front of a judge."
+        }
+      }]
+    }
+    </script>
 </head>
 <body>
 
@@ -159,6 +213,47 @@
                 <h3>Why Choose TL Criminal Defence?</h3>
                 <p>Trevor Lau has extensive experience conducting highly contested bail hearings and complex bail reviews in both the Ontario Court of Justice and the Superior Court of Justice. He understands the urgency of these situations and works relentlessly to build robust release plans, ensuring clients can return home to their families while fighting their charges.</p>
                 <p>If you or a family member has been arrested, do not wait. Early intervention is the key to a successful release.</p>
+
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h2>Commonly Asked Questions: Bail Hearings & Reviews</h2>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">What is the difference between a bail hearing and a Bail Review in Ontario? <span class="faq-icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>A bail hearing is your <strong>primary appearance</strong> before a Justice of the Peace to secure release immediately after an arrest. A Bail Review is a formal, complex appeal brought before a Superior Court Judge if you were wrongly detained or if your conditions are unconstitutionally strict and require a material change in circumstances.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">What happens if I am denied bail at my first court appearance? <span class="faq-icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>If you are denied bail at your initial show-cause hearing, you will be remanded into custody at a provincial detention centre. Your only legal remedy to secure release prior to trial is to have a lawyer file a formal application for a <strong>Bail Review</strong> in the Superior Court of Justice.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">What are the legal and financial risks of acting as a surety in Ontario? <span class="faq-icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>A surety pledges a specific amount of money to the court as a guarantee that the accused will follow their release conditions. You do not pay this money upfront, but if the accused breaches their conditions or flees, the Crown can seize your pledged assets through <strong>estreatment proceedings</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">How long can the police legally hold me in custody before a bail hearing? <span class="faq-icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>Under Section 503 of the <em>Criminal Code</em>, police must bring an arrested person before a justice without unreasonable delay, and strictly within a <strong>24-hour window</strong> if a justice is available. Holding a suspect past 24 hours purely for investigative convenience can constitute a serious constitutional violation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">Can my bail conditions be changed without launching a full court appeal? <span class="faq-icon">+</span></button>
+                        <div class="faq-answer">
+                            <p>Yes. If the Crown prosecutor consents to the modifications, your defence lawyer can execute an administrative process called a <strong>Bail Variation</strong>. This allows you to alter highly restrictive terms—such as changing a residence, adjusting a curfew, or swapping a surety—without running a contested Bail Review in front of a judge.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -238,7 +333,7 @@
                     nav.classList.remove('scrolled');
                 }
             });
-            
+
             // HAMBURGER MENU DROPDOWN
             const hamburger = document.getElementById('hamburger');
             const navLinks = document.getElementById('nav-links');
@@ -247,7 +342,7 @@
                 hamburger.addEventListener('click', () => {
                     navLinks.classList.toggle('open');
                 });
-                
+
                 // Closes menu when a link is clicked
                 document.querySelectorAll('.nav-links a').forEach(link => {
                     link.addEventListener('click', () => {
@@ -255,6 +350,22 @@
                     });
                 });
             }
+
+            // FAQ ACCORDION LOGIC
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close all other open items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item && otherItem.classList.contains('active')) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
 
             // SCROLL ANIMATION CLASSES
             const observer = new IntersectionObserver((entries) => {
@@ -274,6 +385,5 @@
         });
     </script>
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-</body>
 </body>
 </html>
