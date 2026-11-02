@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TL Criminal Defence | Toronto Criminal Lawyer</title>
+    <title>TL Criminal Defence | Toronto & Richmond Hill Criminal Lawyer</title>
 
-    <meta property="og:title" content="TL Criminal Defence | Toronto Criminal Lawyer">
+    <meta name="description" content="Oxford-trained and court-tested. Trevor Lau defends clients across Ontario against all criminal charges, with offices in Downtown Toronto and Richmond Hill. Contact for a free consultation.">
+    <meta property="og:title" content="TL Criminal Defence | Toronto & Richmond Hill Criminal Lawyer">
     <meta property="og:description" content="Oxford-trained and court-tested. Trevor Lau defends clients across Ontario against all criminal charges. Contact for a free consultation.">
     <meta property="og:image" content="https://tlcriminaldefence.ca/hero-bg.jpg">
     <meta property="og:url" content="https://tlcriminaldefence.ca/">
@@ -115,8 +116,21 @@
         .urgent-link { color: white; text-decoration: none; transition: color 0.3s; }
         .urgent-link:hover { color: #3b82f6; }
 
+        /* Dual Office Locations Grid */
+        .office-locations { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 25px; }
+        .office-box { padding: 18px; background-color: rgba(255,255,255,0.05); border-left: 4px solid #ea580c; border-radius: 6px; }
+        .office-box.secondary { border-left-color: #3b82f6; }
+        .office-tag { font-size: 0.8rem; color: #ea580c; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 6px; }
+        .office-box.secondary .office-tag { color: #60a5fa; }
+        .office-address { font-style: normal; color: white; font-size: 0.95rem; line-height: 1.5; }
+        .office-note { font-size: 0.82rem; color: #94a3b8; font-style: italic; display: block; margin-top: 4px; }
+        .office-link { color: #60a5fa; font-size: 0.85rem; text-decoration: none; font-weight: 600; display: inline-block; margin-top: 8px; transition: color 0.3s; }
+        .office-link:hover { color: #93c5fd; text-decoration: underline; }
+
         /* Footer */
         footer { background-color: #020617; color: #64748b; text-align: center; padding: 30px 20px; font-size: 0.9rem; }
+        footer a { color: #94a3b8; text-decoration: none; transition: color 0.3s; }
+        footer a:hover { color: white; }
 
         /* SCROLL ANIMATION CLASSES */
         .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
@@ -130,7 +144,7 @@
             .hero { padding: 100px 20px; }
             .hero h1 { font-size: 2.2rem; }
             .hero p.sub-headline { font-size: 1.8rem; }
-            .about-grid, .review-grid, .contact-grid { grid-template-columns: 1fr; }
+            .about-grid, .review-grid, .contact-grid, .office-locations { grid-template-columns: 1fr; }
             
             .mobile-call-btn { 
                 display: flex; position: fixed; bottom: 20px; right: 20px; 
@@ -152,6 +166,48 @@
             .nav-links a { padding: 20px 40px; border-bottom: 1px solid rgba(255,255,255,0.05); }
         }
     </style>
+
+    <!-- Multi-Location LegalService Schema (Toronto & Richmond Hill) -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "TL Criminal Defence - Toronto",
+        "image": "https://tlcriminaldefence.ca/headshot.jpg",
+        "url": "https://tlcriminaldefence.ca/",
+        "telephone": "+1-647-745-6696",
+        "email": "trevor@tlcriminaldefence.ca",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "130 Spadina Ave., Suite 606",
+          "addressLocality": "Toronto",
+          "addressRegion": "ON",
+          "postalCode": "M5V 2L4",
+          "addressCountry": "CA"
+        },
+        "areaServed": "Greater Toronto Area"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "LegalService",
+        "name": "TL Criminal Defence - Richmond Hill",
+        "image": "https://tlcriminaldefence.ca/headshot.jpg",
+        "url": "https://tlcriminaldefence.ca/richmond-hill-criminal-lawyer.html",
+        "telephone": "+1-647-745-6696",
+        "email": "trevor@tlcriminaldefence.ca",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "120 East Beaver Creek Rd #200",
+          "addressLocality": "Richmond Hill",
+          "addressRegion": "ON",
+          "postalCode": "L4B 4V1",
+          "addressCountry": "CA"
+        },
+        "areaServed": "York Region"
+      }
+    ]
+    </script>
 </head>
 <body>
 
@@ -279,8 +335,8 @@
                     <p>Trevor Lau obtained his law degree from the <strong>University of Oxford</strong>, and a Masters of Law from <strong>Osgoode Hall Law School</strong>.</p>
                     <p>Trevor is an experienced criminal defence lawyer who has successfully defended clients in both the Ontario Court of Justice and the Superior Court of Justice, against charges ranging from Impaired operation (DUI) to Murder. He has also won appeal cases, which were featured in the Toronto Star.</p>
                     <p>Trevor defends clients across Ontario rigorously, and believes every client deserves honesty and communication throughout the criminal justice process. His approach combines aggressive advocacy with transparent client relationships.</p>
-                    <p>Trevor frequently represents clients in jurisdictions such as: Toronto, Brampton, Newmarket, Oshawa, Milton, Hamilton, St. Catharines, Bradford, Peterborough, Kitchener, Orangeville, Sudbury.</p>
-                    <p> Trevor is a member of the Criminal Lawyers' Association, the Canadian Bar Association, and the Ontario Bar Association.</p>
+                    <p>With offices in <strong>Downtown Toronto</strong> and <a href="richmond-hill-criminal-lawyer.html" style="color: #1d4ed8; font-weight: 600; text-decoration: none;">Richmond Hill</a>, Trevor frequently represents clients in jurisdictions such as: Toronto, Newmarket, Brampton, Oshawa, Milton, Hamilton, St. Catharines, Bradford, Peterborough, Kitchener, Orangeville, and Sudbury.</p>
+                    <p>Trevor is a member of the Criminal Lawyers' Association, the Canadian Bar Association, and the Ontario Bar Association.</p>
                 </div>
                 <div class="headshot-container reveal" style="transition-delay: 0.2s;">
                     <img src="headshot.jpg" alt="Trevor Lau - Criminal Defence Lawyer" class="headshot-img">
@@ -334,9 +390,29 @@
                 <h2>Start with a free consultation.</h2>
                 <p>Being charged with a criminal offence is a life-changing event. You deserve honest communication and a rigorous defence throughout the criminal justice process.</p>
                 <p>Contact TL Criminal Defence for experienced representation against any and all kinds of criminal charges.</p>
-                <p style="color: #ea580c; font-weight: bold; font-size: 1.2rem; margin-top: 20px;">Serving clients across the GTA and all of Ontario.</p>
+                <p style="color: #ea580c; font-weight: bold; font-size: 1.2rem; margin-top: 20px;">Serving clients across the GTA, York Region, and all of Ontario.</p>
                 
-                <div style="margin-top: 40px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1);">
+                <!-- Dual Office Locations Block -->
+                <div class="office-locations">
+                    <div class="office-box">
+                        <span class="office-tag">Toronto (Main Office)</span>
+                        <address class="office-address">
+                            130 Spadina Ave., Suite 606<br>
+                            Toronto, ON M5V 2L4
+                        </address>
+                    </div>
+                    <div class="office-box secondary">
+                        <span class="office-tag">Richmond Hill Office</span>
+                        <address class="office-address">
+                            120 East Beaver Creek Rd #200<br>
+                            Richmond Hill, ON L4B 4V1
+                            <span class="office-note">*By appointment only</span>
+                        </address>
+                        <a href="richmond-hill-criminal-lawyer.html" class="office-link">York Region Defence &rarr;</a>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 30px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.1);">
                     <h3 style="font-size: 1.5rem; margin-bottom: 15px; color: white;">Need immediate assistance?</h3>
                     <p style="margin-bottom: 20px; color: #cbd5e1;">For urgent bail matters or immediate legal counsel, please reach out directly.</p>
                     <div style="display: flex; flex-direction: column; gap: 15px;">
@@ -386,6 +462,10 @@
 
     <footer>
         <p>© 2026 TL Criminal Defence. All Rights Reserved. Not legal advice until formally retained.</p>
+        <p style="margin-top: 8px; font-size: 0.85rem;">
+            <a href="index.html">Toronto Office: 130 Spadina Ave., Suite 606</a> &nbsp;|&nbsp; 
+            <a href="richmond-hill-criminal-lawyer.html">Richmond Hill Office: 120 East Beaver Creek Rd #200</a>
+        </p>
     </footer>
 
     <a href="tel:6477456696" class="mobile-call-btn">
@@ -441,4 +521,3 @@
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </body>
 </html>
-
